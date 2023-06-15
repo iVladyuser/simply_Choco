@@ -1,0 +1,46 @@
+.components-heading {
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-size: 24px;
+  line-height: 1.16;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  color: var(--main-color);
+  
+
+  
+  margin: 0 auto;
+  margin-bottom: 28px;
+  width: 411px;
+  text-align: center;
+
+}
+
+.orange-word {
+  color: var(--orange-color);
+}
+
+.component-description {
+  font-style
+  text-align: center;
+  letter-spacing: -0.02em;
+  line-height: 1.29;
+  color: var(--main-color);
+
+   width: 486px;
+   margin-bottom: 50px;
+   margin-top: 28px;
+
+  
+   
+}
+
+
+.component-menu {
+  display: flex;
+  flex-wrap: nowrap;
+  column-gap: 19px;
+  row-gap: 0;
+
+  margin-top: 50px;
+}
