@@ -1,0 +1,75 @@
+:root {
+  --main-color: #111;
+  --background-color: #1e1823;
+  --background-hover-color: #fcf1e0;
+  --text-color-theme-dark: #fff;
+  --cloud-color: #fafafa;
+  --orange-color: #fd9222;
+
+  font-family: Inter, Avenir, Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+
+  color: #242424;
+  background-color: rgba(255, 255, 255, 0.87);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  /* color: var();
+	background-color: var(); */
+}
+
+.container {
+  padding-left: 32px;
+  padding-right: 32px;
+  margin: 0 auto;
+}
+
+/* .link:hover,
+.link:focus,
+.link:active,
+.order-btn:active,
+.filter-btn:active {
+  color: var(--accent-color);
+} */
+
+@media screen and (max-width: 767.9px) {
+  .container {
+    min-width: 320px;
+    max-width: 375px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .section {
+    padding-top: 72px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .section {
+    padding-top: 100px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    padding-left: 32px;
+    padding-right: 32px;
+  }
+  .section {
+    padding-top: 128px;
+  }
+}
