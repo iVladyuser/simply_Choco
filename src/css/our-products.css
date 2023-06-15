@@ -1,16 +1,14 @@
 .title-products {
-    color: var(#111);
-    font-weight: 600;
-    font-size: 24px;
-    line-height: 28px;
+  color: var(#111);
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 28px;
 }
 span {
-    color: var(#fd9222);
+  color: var(#fd9222);
 }
-.products{
-   display: flex;
-   
+.products {
+  display: flex;
 }
 img {
-
 }
