@@ -215,7 +215,7 @@ margin-top: 36px;
   border-radius: 15px;
   backface-visibility: hidden;
   border: 1px solid var(--text-color-theme-dark);
-  padding: 20px;
+  padding: 15px;
   overflow: auto;
 }
 
