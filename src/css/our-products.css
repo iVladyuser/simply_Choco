@@ -5,22 +5,15 @@
     line-height: 28px;
 }
 span {
-<<<<<<< Updated upstream
-    color: var(#fd9222);
-=======
-  color: var(--orange-color);;
->>>>>>> Stashed changes
+  color: var(--orange-color);
+    
 }
+
 .products{
-   display: flex;
-   
+  display: flex;
 }
-<<<<<<< Updated upstream
 img {
-max-width: ;
+  min-width: 335px;
 }
-=======
- img {
-  max-width: 330px;
-} 
->>>>>>> Stashed changes
+   
+   
