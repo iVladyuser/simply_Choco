@@ -1,12 +1,22 @@
 <section id="how-made" class="container how-made-container">
-    <h2 class="how-made-section-title">how it's made?</h2>
+    <h2 class="how-made-section-title">how it's <span class="title-accent">made?</span></h2>
     <div class="how-made-content">
         <div class="how-made-img-box">
-            <img src="../img/how-its-sec-img/blending-choco-mobile.jpg" alt="blending-choco" class="how-made-img">
+            <picture>
+                <source media="(min-width: 1200px)" srcset="../img/how-its-sec-img/blending-choco-desktop.jpg 1x,
+                ../img/how-its-sec-img/blending-choco-desktop@2x.jpg 2x" />
+                <source media="(min-width: 768px)" srcset="../img/how-its-sec-img/blending-choco-tablet.jpg 1x,
+                ../img/how-its-sec-img/blending-choco-tablet@2x.jpg 2x" />
+                <source media="(min-width: 320px)" srcset="../img/how-its-sec-img/blending-choco-mobile.jpg 1x,
+                ../img/how-its-sec-img/blending-choco-mobile@2x.jpg 2x" />
+
+                <img src=" ../img/how-its-sec-img/blending-choco-mobile.jpg" alt="blending-choco" class="how-made-img">
+            </picture>
+
         </div>
         <div class="how-made-description-box">
             <div class="how-made-card">
-                <h3 class="how-made-description">Try our chocolates today and discover the perfect balance of
+                <h3 class="how-made-description-subtitle">Try our chocolates today and discover the perfect balance of
                     flavor
                 </h3>
                 <ul class="how-made-description-list">
