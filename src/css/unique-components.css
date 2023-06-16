@@ -57,6 +57,9 @@
   cursor: pointer;
 }
 
+.component-card:hover {
+  border:none;
+}
 
 
 /* 
@@ -116,7 +119,6 @@ margin-top: 36px;
 .item-front {
   padding: 28px;
 }
-
 
 
 
@@ -214,7 +216,7 @@ margin-top: 36px;
   backface-visibility: hidden;
   border: 1px solid var(--text-color-theme-dark);
   padding: 20px;
-  /* overflow: auto; */
+  overflow: auto;
 }
 
 .item-back::-webkit-scrollbar {
@@ -222,7 +224,7 @@ margin-top: 36px;
 }
 
 .item-back::-webkit-scrollbar-track {
-  background-color: var(--main-color);
+  background-color: var(--orange-color);
   border-radius: 50px;
 }
 
@@ -243,7 +245,7 @@ margin-top: 36px;
 
 .item-back::-moz-scrollbar-track {
   background-color: var(--main-color);
-  border-radius: 50px;
+  border-radius: 20px;
 }
 
 .item-back::-moz-scrollbar-thumb {
