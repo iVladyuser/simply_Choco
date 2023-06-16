@@ -4,7 +4,12 @@
   
 }
 .container-products {
+  display: block;
   position: relative;
+  overflow-y: auto;
+  height: 453px;
+  max-width: 335px;
+  z-index: 1;
 }
 .title-products {
   color: #111;
@@ -19,8 +24,11 @@ span {
   color: var(--orange-color);
 }
 .products {
+  position: absolute;
+  left: 0;
+  top: 0;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   gap: 8px;
   max-width: 335px;
