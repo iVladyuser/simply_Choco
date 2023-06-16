@@ -1,0 +1,208 @@
+@media screen and (max-width: 767.9px) {
+  .img-sellers {
+    display: none;
+  }
+
+  .container {
+    width: 375px;
+  }
+
+  .sellers-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+  }
+
+  .sellers-para-btn {
+    display: none;
+  }
+
+  .sellers-title-span {
+    color: #fd9222;
+  }
+
+  .sellers-img {
+    border-radius: 15px;
+    width: 335px;
+  }
+
+  .sellers-item {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 32px;
+  }
+
+  .sellers-list {
+    display: flex;
+    flex-direction: column;
+
+    gap: 20px;
+  }
+
+  .sellers-paragraf {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    width: 306px;
+  }
+
+  .modal-btn {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #fff;
+    padding: 12px 28px;
+    background: #fd9222;
+    border-radius: 100px;
+    border: none;
+    margin-top: 20px;
+  }
+
+  .paragraf_btn {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199.9px) {
+  .img-sellers {
+    display: none;
+  }
+
+  .sellers-list-text {
+    display: none;
+  }
+
+  .container {
+    width: 768px;
+  }
+
+  .sellers-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .sellers-title-span {
+    color: #fd9222;
+  }
+
+  .sellers-img {
+    border-radius: 15px;
+    width: 344px;
+  }
+
+  .sellers-item {
+    display: flex;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .paragraf_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 236px;
+  }
+
+  .sellers-paragraf {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    width: 306px;
+  }
+
+  .modal-btn {
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #fff;
+    padding: 14px 40px;
+    background: #fd9222;
+
+    border: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+
+  .sellers-list-text {
+    display: none;
+  }
+
+  .sellers-title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 1.2;
+    text-align: center;
+    letter-spacing: -0.03em;
+    text-transform: uppercase;
+    margin-bottom: 32px;
+  }
+
+  .sellers-title-span {
+    color: #fd9222;
+  }
+
+  .sellers-img {
+    width: 368px;
+    border-radius: 15px;
+  }
+
+  .sellers-item {
+    display: flex;
+
+    justify-content: center;
+    gap: 16px;
+    margin-bottom: 32px;
+  }
+
+  .paragraf_btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 567px;
+  }
+
+  .sellers-paragraf {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.29;
+    letter-spacing: -0.02em;
+    width: 407px;
+  }
+
+  .modal-btn {
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 0.8;
+    color: #fff;
+    padding: 14px 40px;
+    background: #fd9222;
+    border-radius: 100px;
+    border: none;
+  }
+}

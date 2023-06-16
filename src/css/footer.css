@@ -1,0 +1,58 @@
+.footer {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: var(--background-color);
+  color: var(--text-color-theme-dark);
+}
+.footer-slogan {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 28px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  margin-bottom: 32px;
+}
+.footer-slogan-accent {
+  color: var(--orange-color);
+}
+
+.footer-social-icon {
+  fill: currentColor;
+}
+.footer-contact-box {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 64px;
+}
+.footer-contact-caption {
+  margin-bottom: 14px;
+}
+.footer-networks-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+}
+.footer-networks-link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.footer-menu-box {
+  position: relative;
+}
+.footer-menu-list::before {
+  content: '';
+  position: absolute;
+  top: -24px;
+  left: 0;
+  display: block;
+  width: 100%;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+.footer-menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
