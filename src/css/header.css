@@ -1,37 +1,7 @@
 .header {
-  padding: 20px 32px;
-  display: flex;
-  justify-content: space-between;
-}
-.main-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-.logo {
-  font-family: 'Montserrat';
-  font-style: italic;
-  font-weight: 700;
-  font-size: 18px;
-  line-height: 1.11;
-  letter-spacing: -0.03em;
-
-  color: var(--main-color);
-
-  display: flex;
-  align-items: center;
-  margin-right: 188px;
+  padding: 20px 0;
 }
 
-.logo-sp {
-  font-style: normal;
-}
-
-.logo-svg {
-  width: 24px;
-  height: 24px;
-  padding-left: 4px;
-}
 .nav-list {
   display: flex;
   align-items: center;
@@ -48,10 +18,4 @@
 .nav-link:hover,
 .nav-link:focus {
   color: #747bff;
-}
-
-.social-networks {
-  display: flex;
-  align-items: center;
-  gap: 18px;
 }

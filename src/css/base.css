@@ -22,7 +22,8 @@
 
 body {
   font-family: 'Montserrat', sans-serif;
-  background-color: #fafafa;
+  /* color: var();
+	background-color: var(); */
 }
 
 .container {
@@ -69,14 +70,4 @@ body {
   .section {
     padding-top: 128px;
   }
-}
-
-.title {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.166;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
 }
