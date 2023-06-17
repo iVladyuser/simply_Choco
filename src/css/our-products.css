@@ -6,7 +6,7 @@
 .container-products {
   display: block;
   position: relative;
-  overflow-y: auto;
+  overflow-y: hidden;
   scroll-snap-type: x mandatory;
   height: 453px;
   max-width: 335px;
@@ -80,12 +80,27 @@ span {
   
   
 }
-@media screen and (min-width: 767.9px) {
+.swiper {
+  
+}
+.swiper-slide {
+
+
+}
+@media screen and (min-width: 768px) {
   .products{
     flex-direction: row;
+  }
+  .container-products {
+    max-width: 768px;
   }
 }
 img {
   max-width: 320px;
 } 
 
+@media screen and (min-width: 1200px) {
+.container-products {
+    max-width: 1200px;
+  }
+}
