@@ -1,3 +1,19 @@
+
+@media screen and (max-width: 767.9px) {
+}
+
+@media screen and (min-width: 768px) {
+}
+
+@media screen and (min-width: 1200px)
+{
+
+}
+
+
+
+
+
 .components-heading {
   font-family: 'Montserrat', sans-serif;
   font-style: normal;
@@ -46,6 +62,47 @@
   
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.component-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+  .item-front {
+      padding: 28px;
+      border-radius: 20px;
+   }
+   .ingredient-img {
+      padding-left: 27px;
+      padding-right: 27px;
+   }
+   .component-card-item-title {
+      margin-top: 25px;
+   }
+   .item-back {
+      padding: 28px;
+   }
+   .component-menu {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+   }
+
+   .item-back {
+   padding: 28px;
+   }
+
+}
+
+
+
+
 .component-card {
   display: flex;
   align-items: center;
@@ -63,12 +120,31 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 
 
 
+@media screen and (min-width: 768px) {
+
+  .component-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 336px;
+  height: 270px;
+  border-radius: 15px;
+  /* border: 1px solid var(--orange-color); */
+  position: relative;
+  cursor: pointer;
+
+transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+  
+}
+
+}
+
 
 
 
 .component-card-wrapper:nth-child(1)
 .component-card {
-  background-color: orange;
+  background-color: #FD9222;
   color: var(--text-color-theme-dark);
   border: 1px solid var(--orange-color);
   }
@@ -206,10 +282,20 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   height: 100%;
   top: 0;
   left: 0;
-  /* border: none; */
-  border: 1px solid var(--text-color-theme-dark);
-  
-  
+  border: 1px solid var(--text-color-theme-dark);  
+}
+
+@media screen and (min-width: 768px) {
+.ingredient-card-item {
+
+  position: absolute;
+  width: 100%;
+  /* height: 100%; */
+  top: 0;
+  left: 0;
+  border: 1px solid var(--text-color-theme-dark);  
+}
+
 }
 
 
@@ -270,8 +356,7 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 
 
 
-
-
+@media screen and (min-width: 1200px) {
 .item-back {
 
   
@@ -284,6 +369,21 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   overflow: auto;
   /* overflow: hidden; */
 }
+
+}
+
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+.item-back {
+  background-color: var(--text-color-theme-dark);
+  color: var(--main-color);
+  border-radius: 13px;
+  backface-visibility: hidden;
+  border: 1px solid var(--text-color-theme-dark);
+  /* overflow: auto; */
+}
+}
+
 
 
 .item-back::-webkit-scrollbar {
