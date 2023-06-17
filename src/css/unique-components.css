@@ -31,6 +31,7 @@
   width: 486px;
   /* margin-bottom: 50px; */
   margin-top: 28px;
+  
 }
 
 .component-menu {
@@ -42,7 +43,7 @@
   row-gap: 0;
 
   margin-top: 50px;
-   
+  
 }
 
 .component-card {
@@ -55,33 +56,26 @@
   border: 1px solid var(--orange-color);
   position: relative;
   cursor: pointer;
+
+transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+  
 }
 
 .component-card:hover {
-  border:none;
+  /* border:none;
+  outline: none; */
+
 }
 
 
-/* 
-  --main-color: #111;
-  --background-color: #1e1823;
-  --background-hover-color: #fcf1e0;
-  --text-color-theme-dark: #fff;
-  --cloud-color: #fafafa;
-  --orange-color: #fd9222;
 
-  background-color: var(--text-color-theme-dark);
-
-  background-color: var(--background-color);
-
-  background-color: var(--text-color-theme-dark);
- */
 
 .component-card-wrapper:nth-child(1)
 .component-card {
   background-color: orange;
   color: var(--text-color-theme-dark);
-}
+  }
+
 
 
 .component-card-wrapper:nth-child(4)
@@ -91,19 +85,59 @@
 }
 
 
-.component-card-wrapper:nth-child(5)
+.component-card-wrapper:nth-child(3)
 .component-card {
   background-color: var(--background-color);
   color: var(--text-color-theme-dark);
-  border: 1px solid var(--main-color);
 }
+
+
 
 .component-card-wrapper:nth-child(6)
 .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
+}
+
+/* Hover  */
+
+.component-card-wrapper:nth-child(1)
+.component-card:hover {
+  background-color: var(--text-color-theme-dark);
+  color: var(--text-color-theme-dark);
+  transition: background-color 0.5s ease, color 0.5s ease;
+   border: none;
+  }
+
+
+.component-card-wrapper:nth-child(4)
+.component-card:hover {
+  background-color: var(--text-color-theme-dark);
+  color: var(--text-color-theme-dark);
+  transition: border 0.5s ease, color 0.5s ease;
+   border: none;
+  }
+
+
+  .component-card-wrapper:nth-child(3)
+.component-card:hover {
+  background-color: var(--text-color-theme-dark);
+  color: var(--text-color-theme-dark);
+  transition: background-color 0.5s ease, color 0.5s ease;
+  border: none;
+}
+
+.component-card-wrapper:nth-child(6)
+.component-card:hover {
+  background-color: var(--text-color-theme-dark);
+  color: var(--main-color);
+  border: none;
+  transition: border 0.5s ease, color 0.5s ease;
   
 }
+
+
+
 
 .component-card-item-title {
   font-style: normal;
@@ -111,15 +145,31 @@
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-text-transform: uppercase;
+  text-transform: uppercase;
 
-margin-top: 36px;
+  margin-top: 36px;
+  
 }
+
+
 
 .item-front {
   padding: 28px;
+  
+  
 }
 
+
+
+
+
+.ingredient-img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+    
+    
+}
 
 
 
@@ -133,6 +183,9 @@ margin-top: 36px;
   position: relative;
   margin-top: 14px;
   color: var(--main-color);
+  
+
+
 
   font-weight: 400;
   font-size: 14px;
@@ -140,7 +193,7 @@ margin-top: 36px;
   letter-spacing: -0.02em;
 
   margin-bottom: 8px;
-  /* padding: 20px; */
+  padding: 20x;
 }
 
 .ingredient-card-item {
@@ -150,17 +203,25 @@ margin-top: 36px;
   height: 100%;
   top: 0;
   left: 0;
+  /* border: none; */
+  border: 1px solid var(--text-color-theme-dark);
+  
+  
 }
 
 
 .component-card .ingredient-card-item {
   transform: translateY(100%);
   transition: transform 0.5s ease-in-out;
+   
 }
 
 .component-card:hover .ingredient-card-item {
   transform: translateY(0%);
+  outline: none;
+ 
 }
+
 
 .ingredient-card-title {
   font-style: normal;
@@ -173,12 +234,6 @@ margin-top: 36px;
 
 
   margin-bottom: 8px;
-
-
-
-
-
-  /* transform: translate(0, 100%); */
 }
 
 .overlay-button-row {
@@ -209,15 +264,23 @@ margin-top: 36px;
   border: 1px solid var(--orange-color);
 }
 
+
+
+
+
+
 .item-back {
+
+  
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
-  border-radius: 15px;
+  border-radius: 13px;
   backface-visibility: hidden;
   border: 1px solid var(--text-color-theme-dark);
   padding: 15px;
-  overflow: auto;
+  /* overflow: auto; */
 }
+
 
 .item-back::-webkit-scrollbar {
   width: 5px;
@@ -253,7 +316,6 @@ margin-top: 36px;
   border-radius: 20px;
   border: 1px solid var(--main-color);
 }
-
 
 
 
