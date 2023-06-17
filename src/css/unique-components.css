@@ -53,7 +53,7 @@
   width: 270px;
   height: 270px;
   border-radius: 15px;
-  border: 1px solid var(--orange-color);
+  /* border: 1px solid var(--orange-color); */
   position: relative;
   cursor: pointer;
 
@@ -61,11 +61,7 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   
 }
 
-.component-card:hover {
-  /* border:none;
-  outline: none; */
 
-}
 
 
 
@@ -74,29 +70,42 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 .component-card {
   background-color: orange;
   color: var(--text-color-theme-dark);
+  border: 1px solid var(--orange-color);
   }
 
+.component-card-wrapper:nth-child(3)
+.component-card {
+  background-color: var(--background-color);
+  color: var(--text-color-theme-dark);
+  border: 1px solid var(--main-color);
+}
 
 
 .component-card-wrapper:nth-child(4)
 .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
+  border: 1px solid var(--orange-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
 }
 
 
-.component-card-wrapper:nth-child(3)
-.component-card {
-  background-color: var(--background-color);
-  color: var(--text-color-theme-dark);
-}
-
-
-
-.component-card-wrapper:nth-child(6)
+.component-card-wrapper:nth-child(2)
 .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
+  border: 1px solid var(--orange-color);
+  transition: background-color 0.5s ease, color 0.5s ease;
+}
+
+
+.component-card-wrapper:nth-child(2)
+.component-card:hover {
+  background-color: var(--text-color-theme-dark);
+  color: var(--text-color-theme-dark);
+  
+  border: 1px solid var(--text-color-theme-dark);
+transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 }
 
 /* Hover  */
@@ -112,10 +121,11 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 
 .component-card-wrapper:nth-child(4)
 .component-card:hover {
-  background-color: var(--text-color-theme-dark);
+    background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
-  transition: border 0.5s ease, color 0.5s ease;
-   border: none;
+  
+  border: 1px solid var(--text-color-theme-dark);
+transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   }
 
 
@@ -124,17 +134,10 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
   transition: background-color 0.5s ease, color 0.5s ease;
-  border: none;
+  border: 1px solid var(--text-color-theme-dark);
 }
 
-.component-card-wrapper:nth-child(6)
-.component-card:hover {
-  background-color: var(--text-color-theme-dark);
-  color: var(--main-color);
-  border: none;
-  transition: border 0.5s ease, color 0.5s ease;
-  
-}
+
 
 
 
@@ -277,8 +280,9 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   border-radius: 13px;
   backface-visibility: hidden;
   border: 1px solid var(--text-color-theme-dark);
-  padding: 15px;
-  /* overflow: auto; */
+  padding: 20px;
+  overflow: auto;
+  /* overflow: hidden; */
 }
 
 
@@ -287,19 +291,17 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 }
 
 .item-back::-webkit-scrollbar-track {
-  background-color: var(--orange-color);
-  border-radius: 50px;
+  background-color: transparent;
 }
 
+
 .item-back::-webkit-scrollbar-thumb {
-  background-color: var(--text-color-theme-dark);
-  border-radius: 20px;
-  border: 1px solid var(--main-color);
+  background-color: transparent;
 }
 
 .item-back {
   scrollbar-width: thin;
-  scrollbar-color: var(--text-color-theme-dark) var(--main-color);
+  scrollbar-color: transparent transparent;
 }
 
 .item-back::-moz-scrollbar {
@@ -307,15 +309,18 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 }
 
 .item-back::-moz-scrollbar-track {
-  background-color: var(--main-color);
-  border-radius: 20px;
+  background-color: transparent;
 }
 
 .item-back::-moz-scrollbar-thumb {
-  background-color: var(--text-color-theme-dark);
-  border-radius: 20px;
-  border: 1px solid var(--main-color);
+  background-color: transparent;
 }
 
 
 
+.item-back::after {
+  content: "";
+  display: block;
+  height: 10px;
+  width: 230px;
+}
