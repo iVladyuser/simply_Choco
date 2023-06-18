@@ -1,17 +1,6 @@
 @media screen and (max-width: 767.9px) {
-  
-  .container {
-    width: 375px;
-  }
-
+ 
   .sellers-title {
-    /* font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase; */
     margin-bottom: 32px;
   }
 
@@ -25,7 +14,7 @@
 
   .sellers-img {
     border-radius: 15px;
-    width: 335px;
+   
   }
 
   .sellers-list {
@@ -47,7 +36,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 306px;
+    max-width: 306px;
   }
 
   .modal-btn {
@@ -58,7 +47,7 @@
     color: #fff;
     padding: 12px 28px;
     background: #fd9222;
-    border-radius: 100px;
+   
     border: none;
     margin-top: 20px;
   }
@@ -81,18 +70,7 @@
     display: none;
   }
 
-  .container {
-    width: 768px;
-  }
-
   .sellers-title {
-    /* font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase; */
     margin-bottom: 50px;
   }
 
@@ -102,13 +80,13 @@
 
   .sellers-img {
     border-radius: 15px;
-    width: 344px;
+   
   }
  
 
   .sellers-list{
     display: flex;
-    flex-direction: row;
+    justify-content: center;
     gap: 16px;
     margin-bottom: 32px;
 
@@ -116,9 +94,8 @@
 
   .paragraf_btn {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
-    gap: 236px;
+    justify-content: space-between;
+    
   }
 
   .sellers-paragraf {
@@ -127,7 +104,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 306px;
+    max-width: 306px;
   }
 
   .modal-btn {
@@ -151,22 +128,13 @@
 }
 
 @media screen and (min-width: 1200px) {
-  .container {
-    width: 1200px;
-  }
+
 
   .sellers-list-text {
     display: none;
   }
 
   .sellers-title {
-    /* font-style: normal;
-    font-weight: 600;
-    font-size: 20px;
-    line-height: 1.2;
-    text-align: center;
-    letter-spacing: -0.03em;
-    text-transform: uppercase; */
     margin-bottom: 50px;
   }
 
@@ -175,7 +143,7 @@
   }
 
   .sellers-img {
-    width: 368px;
+    
     border-radius: 15px;
   }
 
@@ -189,8 +157,7 @@
   .paragraf_btn {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    gap: 567px;
+    justify-content: space-between;
   }
 
   .sellers-paragraf {
@@ -199,7 +166,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 407px;
+    max-width: 407px;
   }
 
   .modal-btn {
@@ -211,7 +178,7 @@
     color: #fff;
     padding: 14px 40px;
     background: #fd9222;
-    border-radius: 100px;
+  
     border: none;
   }
 
