@@ -14,7 +14,7 @@
 
   .sellers-img {
     border-radius: 15px;
-    width: 335px;
+   
   }
 
   .sellers-list {
@@ -22,7 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
-    padding: 0;
+  
   }
 
   .sellers-item {
@@ -37,7 +37,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 306px;
+    max-width: 306px;
   }
 
   .modal-btn {
@@ -48,9 +48,14 @@
     color: #fff;
     padding: 12px 28px;
     background: #fd9222;
-    border-radius: 100px;
+   
     border: none;
     margin-top: 20px;
+  }
+
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
   }
 
   .paragraf_btn {
@@ -71,7 +76,6 @@
     display: none;
   }
 
-
   .sellers-title {
     margin-bottom: 50px;
   }
@@ -82,24 +86,22 @@
 
   .sellers-img {
     border-radius: 15px;
-    width: 344px;
+   
   }
  
 
   .sellers-list{
     display: flex;
     justify-content: center;
-    flex-direction: row;
     gap: 16px;
     margin-bottom: 32px;
-    padding: 0;
+
   }
 
   .paragraf_btn {
     display: flex;
-    flex-direction: row;
     justify-content: space-between;
-  
+    
   }
 
   .sellers-paragraf {
@@ -108,7 +110,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 306px;
+    max-width: 306px;
   }
 
   .modal-btn {
@@ -124,6 +126,11 @@
     border: none;
   }
 
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+  }
+
   
   .img-sellers {
     display: none;
@@ -132,7 +139,8 @@
 }
 
 @media screen and (min-width: 1200px) {
- 
+
+
   .sellers-list-text {
     display: none;
   }
@@ -146,7 +154,7 @@
   }
 
   .sellers-img {
-    width: 368px;
+    
     border-radius: 15px;
   }
 
@@ -155,7 +163,7 @@
     justify-content: center;
     gap: 16px;
     margin-bottom: 32px;
-    padding: 0;
+ 
   }
 
   .paragraf_btn {
@@ -170,7 +178,7 @@
     font-size: 14px;
     line-height: 1.29;
     letter-spacing: -0.02em;
-    width: 407px;
+    max-width: 407px;
   }
 
   .modal-btn {
@@ -182,8 +190,13 @@
     color: #fff;
     padding: 14px 40px;
     background: #fd9222;
-    border-radius: 100px;
+  
     border: none;
+  }
+
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
   }
 
 }
