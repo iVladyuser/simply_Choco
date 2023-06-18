@@ -1,16 +1,6 @@
-.how-made-container {
-  padding-bottom: 36px;
-  padding-top: 36px;
-  background-color: var(--cloud-color);
-}
-
 .how-made-section-title {
-  font-weight: 600;
   font-size: 20px;
   line-height: 1.2;
-  text-align: center;
-  letter-spacing: -0.03em;
-  text-transform: uppercase;
   color: var(--main-color);
 }
 
@@ -27,7 +17,7 @@
 }
 
 .how-made-img {
-  min-width: 335px;
+  max-width: 335px;
   height: 500px;
   border-radius: 15px;
   display: block;
@@ -71,11 +61,6 @@
 /*=====================tablet=================== */
 
 @media screen and (min-width: 768px) {
-  .how-made-container {
-    padding-bottom: 50px;
-    padding-top: 50px;
-  }
-
   .how-made-section-title {
     font-size: 24px;
     line-height: 1.17;
@@ -120,11 +105,6 @@
 /* ===============desktop============= */
 
 @media screen and (min-width: 1200px) {
-  .how-made-container {
-    padding-bottom: 64px;
-    padding-top: 64px;
-  }
-
   .how-made-content {
     flex-direction: row;
   }
