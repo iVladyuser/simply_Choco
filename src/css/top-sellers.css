@@ -22,6 +22,7 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 32px;
+  
   }
 
   .sellers-item {
@@ -50,6 +51,11 @@
    
     border: none;
     margin-top: 20px;
+  }
+
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
   }
 
   .paragraf_btn {
@@ -116,8 +122,13 @@
     color: #fff;
     padding: 14px 40px;
     background: #fd9222;
-
+    border-radius: 100px;
     border: none;
+  }
+
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
   }
 
   
@@ -152,6 +163,7 @@
     justify-content: center;
     gap: 16px;
     margin-bottom: 32px;
+ 
   }
 
   .paragraf_btn {
@@ -180,6 +192,11 @@
     background: #fd9222;
   
     border: none;
+  }
+
+  .modal-btn:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
   }
 
 }
