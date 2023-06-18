@@ -105,11 +105,11 @@
   pointer-events: auto;
 }
 
-/* .mobile-menu.is-open {
+.is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
-} */
+}
 
 .mobile-nav-list {
   display: flex;
@@ -156,17 +156,7 @@
 .mobile-social-networks-icon {
   fill: var(--text-color-theme-dark);
 }
-@media screen and (min-width: 428px) and (max-width: 1199.9px) {
-  .nav-list {
-    display: none;
-  }
-  .nav-link {
-    display: none;
-  }
-  .social-networks {
-    display: none;
-  }
-}
+
 @media screen and (min-width: 768px) {
   .container {
     padding-left: 32px;
@@ -231,7 +221,7 @@
   }
   .icon:hover,
   .icon:focus {
-    stroke: var(--orange-color);
+    fill: var(--orange-color);
   }
   .instagram-svg,
   .twitter-svg {
