@@ -365,15 +365,23 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   padding: 20x;
 }
 
+
+
+@media screen and (max-width: 767.9px) {
 .ingredient-card-item {
 
   position: absolute;
   width: 100%;
-  height: 100%;
+  /* height: 100%; */
   top: 0;
   left: 0;
-  border: 1px solid var(--text-color-theme-dark);  
+  /* border: 1px solid var(--text-color-theme-dark);   */
+  background-color: var(--text-color-theme-dark);
+  border-radius: 15px;
+
+} 
 }
+
 
 @media screen and (min-width: 768px) {
 .ingredient-card-item {
@@ -385,6 +393,25 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   left: 0;
   border: 1px solid var(--text-color-theme-dark);  
 }
+
+}
+
+
+@media screen and (min-width: 1200px)
+{
+.ingredient-card-item {
+
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  border: 1px solid var(--text-color-theme-dark);  
+  background-color: var(--text-color-theme-dark);
+  border-radius: 15px;
+
+} 
+
 
 }
 
