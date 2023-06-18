@@ -1,37 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600&family=Raleway:wght@800&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
-      integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
-    <link rel="stylesheet" href="../css/hero.css" />
-  </head>
-  <body>
+
     <section class="hero">
       <div class="container">
         <div class="wrapper-hero">
-          <h1 class="main-title">
+          <h1 class="visually-hidden">hero section</h1>
+          <h2 class="main-title animate__animated animate__lightSpeedInLeft">
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
-          </h1>
+          </h2>
           <ul class="hero-list">
             <li class="hero-link-list">
-              <a href="" class="hero-link">
-                <button class="btn-hero">Buy now</button>
-              </a>
+              <button
+                type="button"
+                class="btn btn-primary btn-hero"
+                data-bs-toggle="modal"
+                data-bs-target="#staticBackdrop"
+              >
+                Buy now
+              </button>
             </li>
             <li class="hero-link-list">
               <a href="" class="hero-link">
@@ -51,5 +36,96 @@
         </a>
       </div>
     </section>
+    <!-- Модальное окно -->
+    <div
+      class="modal fade"
+      id="staticBackdrop"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+      tabindex="-1"
+      aria-labelledby="staticBackdropLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h1 class="modal-title fs-5" id="staticBackdropLabel">
+              <span class="buy-modal">bUY</span>NOW
+            </h1>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Закрыть"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <form class="modal-form-hero">
+              <label class="wrapper-moda-hero">
+                <input type="text" class="input-modal-hero" />
+                <img
+                  class="image-modal-hero"
+                  src="../img/hero-sec-img/choco3.png"
+                  width="30"
+                  height="30"
+                  alt=""
+              /></label>
+              <label class="wrapper-moda-hero">
+                <input type="text" class="input-modal-hero" />
+                <img
+                  class="image-modal-hero image-modal-hero-2"
+                  src="../img/hero-sec-img/choco2.png"
+                  width="30"
+                  height="30"
+                  alt=""
+              /></label>
+              <label class="wrapper-moda-hero">
+                <input type="text" class="input-modal-hero" />
+                <img
+                  class="image-modal-hero image-modal-hero-3"
+                  src="../img/hero-sec-img/chocolate.png"
+                  width="30"
+                  height="30"
+                  alt=""
+              /></label>
+              <label class="label-info" for="">
+                <span class="text-label"> Personal information </span>
+                <input type="text" placeholder="name" class="input-info" />
+                <input type="text" placeholder="surname" class="input-info" />
+              </label>
+              <label class="email-info" for="">
+                <span class="text-label"> Email </span>
+                <input
+                  type="text"
+                  placeholder="Enter your email"
+                  class="email-input"
+                />
+              </label>
+              <label class="email-info number-info" for="">
+                <span class="text-label"> Phone number </span>
+
+                <input
+                  type="text"
+                  name="phone"
+                  class="input-with-svg"
+                  placeholder=" Phone number"
+                />
+              </label>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Закрыть
+            </button>
+            <button type="button" class="btn btn-primary">Понял</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script href="../js/hero.js"></script>
   </body>
 </html>
