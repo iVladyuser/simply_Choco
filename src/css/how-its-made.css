@@ -31,6 +31,7 @@
   height: 500px;
   border-radius: 15px;
   display: block;
+  background-image: url(../img/how-its-sec-img/blending-choco-mobile.jpg);
 }
 
 .how-made-card {
@@ -145,4 +146,24 @@
   .how-made-text {
     max-width: 410px;
   }
+}
+
+.how-made-img-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.how-made-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  transform: translatey(100%);
+  transition: transform 250ms ease-in-out;
+}
+
+.how-made-img-box:hover .how-made-overlay {
+  transform: translatex(0);
 }
