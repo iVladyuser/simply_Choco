@@ -1,7 +1,6 @@
 .section-cards {
   padding: 0px;
   padding-top: 72px;
-  
 }
 .container-products {
   display: block;
@@ -33,8 +32,6 @@ span {
   align-items: center;
   gap: 8px;
   margin-top: 32px;
-
-  
 }
 .title-cards {
   margin-top: 8px;
@@ -43,7 +40,6 @@ span {
   line-height: 24px;
   text-align: center;
   color: #111;
-  
 }
 .text-products {
   color: rgba(17, 17, 17, 0.7);
@@ -61,14 +57,15 @@ span {
   gap: 14px;
   margin-top: 18px;
   margin-bottom: 32px;
-  background: #FAFAFA;
+  background: #fafafa;
   font-weight: 600;
   color: #111111;
   font-size: 14px;
-  line-height: 17px;border: 1px solid rgba(17, 17, 17, 0.1);
+  line-height: 17px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
 .list-products {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   padding-top: 32px;
@@ -77,30 +74,19 @@ span {
   width: 330px;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
-  
-  
 }
-.swiper {
-  
-}
-.swiper-slide {
 
-
-}
 @media screen and (min-width: 768px) {
-  .products{
+  .products {
     flex-direction: row;
   }
   .container-products {
     max-width: 768px;
   }
 }
-img {
-  max-width: 320px;
-} 
 
 @media screen and (min-width: 1200px) {
-.container-products {
+  .container-products {
     max-width: 1200px;
   }
 }
