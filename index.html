@@ -31,11 +31,11 @@
     />
     
     <script type="module" crossorigin src="/simply_Choco/assets/index-7f02c69b.js"></script>
-    <link rel="stylesheet" href="/simply_Choco/assets/index-727cd66c.css">
+    <link rel="stylesheet" href="/simply_Choco/assets/index-31efb966.css">
   </head>
   <body>
     <!-- Anna -->
-    <header class="header">
+    <header class="header" id="home">
   <div class="header-container container">
     <nav class="main-nav">
       <a class="logo link"
@@ -45,12 +45,12 @@
         </svg>
       </a>
       <ul class="nav-list list">
-        <li class="nav-link"><a href="home">Home</a></li>
-        <li class="nav-link"><a href="made">How it’s made?</a></li>
-        <li class="nav-link"><a href="products">Our products</a></li>
-        <li class="nav-link"><a href="sellers">Top sellers</a></li>
+        <li class="nav-link"><a href="#home">Home</a></li>
+        <li class="nav-link"><a href="#how-made">How it’s made?</a></li>
+        <li class="nav-link"><a href="#products">Our products</a></li>
+        <li class="nav-link"><a href="#sellers">Top sellers</a></li>
         <li class="nav-link">
-          <a href="clients">Chocolate is loved</a>
+          <a href="#clients">Chocolate is loved</a>
         </li>
       </ul>
     </nav>
@@ -537,121 +537,134 @@
     </div>
 </section>
       <!-- Angelina -->
-      <section class="section-cards">
-    <div class="container">
-        <div class="">
-            <h2 class="title-products">OUR<span>PRODUCTS</span></h2>
-        </div>
-        <div class="container-products">
-            <ul class="products">
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/orange1x.jpg 1x,../img/our-prod-sec-img/orange2x.jpg 2x" 
-                        src="../img/our-prod-sec-img/orange1x.jpg" 
-                        alt="orange">
-                    <h3 class="title-cards">orange</h3>
-                    <p class="text-products">Dark chocolate</p> 
-                    <button class="button-products" type="button">45 UAH</button>
-                </li>
+      <section class="section section-cards">
+  <div class="container">
+    <h2 class="title" id="products">OUR<span> PRODUCTS</span></h2>
+    <div class="container-products">
+      <ul class="products-list">
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/orange1x.jpg 1x,
+              ../img/our-prod-sec-img/orange2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/orange1x.jpg"
+            alt="orange"
+          />
+          <h3 class="title-cards">ORANGE</h3>
+          <p class="text-products">Dark chocolate</p>
+          <button class="button-products" type="button">45 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/applecranberry1x.jpg 1x,../img/our-prod-sec-img/applecranberry2x.jpg 2x"
-                        src="../img/our-prod-sec-img/applecranberry1x.jpg" 
-                        alt="applecranberry">
-                    <h3 class="title-cards">APPLE&CRANBERRY</h3>
-                    <p class="text-products">Milk chocolate</p> 
-                    <button class="button-products" type="button">50 UAH</button> 
-                </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/applecranberry1x.jpg 1x,
+              ../img/our-prod-sec-img/applecranberry2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/applecranberry1x.jpg"
+            alt="applecranberry"
+          />
+          <h3 class="title-cards">APPLE&CRANBERRY</h3>
+          <p class="text-products">Milk chocolate</p>
+          <button class="button-products" type="button">50 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/limeseasalt1x.jpg 1x,../img/our-prod-sec-img/limeseasalt2x.jpg 2x"
-                        src="../img/our-prod-sec-img/limeseasalt1x.jpg" 
-                        alt="limeseasalt">
-                    <h3 class="title-cards">lime&sea salt</h3>
-                    <p class="text-products">Dark chocolate</p>
-                    <button class="button-products" type="button">66 UAH</button>
-                </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/limeseasalt1x.jpg 1x,
+              ../img/our-prod-sec-img/limeseasalt2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/limeseasalt1x.jpg"
+            alt="limeseasalt"
+          />
+          <h3 class="title-cards">LIME&SEA SALT</h3>
+          <p class="text-products">Dark chocolate</p>
+          <button class="button-products" type="button">66 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/pineapple1x.jpg 1x,../img/our-prod-sec-img/pineapple2x.jpg 2x"
-                        src="../img/our-prod-sec-img/pineapple1x.jpg" 
-                        alt="pineapple">
-                    <h3 class="title-cards">pineapple</h3>
-                    <p class="text-products">Dark chocolate</p>
-                    <button class="button-products" type="button">54 UAH</button>
-                </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/pineapple1x.jpg 1x,
+              ../img/our-prod-sec-img/pineapple2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/pineapple1x.jpg"
+            alt="pineapple"
+          />
+          <h3 class="title-cards">PINEAPPLE</h3>
+          <p class="text-products">Dark chocolate</p>
+          <button class="button-products" type="button">54 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/classic1x.jpg 1x,../img/our-prod-sec-img/classic2x.jpg 2x"
-                        src="../img/our-prod-sec-img/classic1x.jpg" 
-                        alt="classic">
-                    <h3 class="title-cards">Classic</h3>
-                    <p class="text-products">Milk chocolate</p>
-                    <button class="button-products" type="button">45 UAH</button>
-                </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/classic1x.jpg 1x,
+              ../img/our-prod-sec-img/classic2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/classic1x.jpg"
+            alt="classic"
+          />
+          <h3 class="title-cards">CLASSIC</h3>
+          <p class="text-products">Milk chocolate</p>
+          <button class="button-products" type="button">45 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/honey1x.jpg 1x,../img/our-prod-sec-img/honey2x.jpg 2x"
-                        src="../img/our-prod-sec-img/honey1x.jpg" 
-                        alt="honey">
-                    <h3 class="title-cards">honey</h3>
-                    <p class="text-products">Milk chocolate</p>
-                    <button class="button-products" type="button">50 UAH</button>
-                </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/honey1x.jpg 1x,
+              ../img/our-prod-sec-img/honey2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/honey1x.jpg"
+            alt="honey"
+          />
+          <h3 class="title-cards">HONEY</h3>
+          <p class="text-products">Milk chocolate</p>
+          <button class="button-products" type="button">50 UAH</button>
+        </li>
 
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/roastedfruits1x.jpg 1x,../img/our-prod-sec-img/roastedfruits2x.jpg 2x"
-                        src="../img/our-prod-sec-img/roastedfruits1x.jpg"
-                        alt="roastedfruits">
-                    <h3 class="title-cards">Roasted fruits</h3>
-                    <p class="text-products">Dark chocolate</p>
-                    <button class="button-products" type="button">66 UAH</button>
-                </li>
-                <li class="list-products">
-                    <img 
-                        srcset="../img/our-prod-sec-img/classicwhite1x.jpg 1x,../img/our-prod-sec-img/classicwhite2x.jpg 2x"
-                        src="../img/our-prod-sec-img/classicwhite1x.jpg" 
-                        alt="classicwhite">
-                    <h3 class="title-cards">Classic</h3>
-                    <p class="text-products">White chocolate</p>
-                    <button class="button-products" type="button">54 UAH</button>
-                </li>
-
-            </ul>
-        </div>
-            <!-- Slider main container -->
-            <div class="swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Slides -->
-                    <div class="swiper-slide">Slide 1</div>
-                    <div class="swiper-slide">Slide 2</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                    <div class="swiper-slide">Slide 3</div>
-                </div>
-                <!-- If we need pagination -->
-                <div class="swiper-pagination"></div>
-            
-                <!-- If we need navigation buttons 
-                <div class="swiper-button-prev"></div>
-                <div class="swiper-button-next"></div>-->
-            
-                <!-- If we need scrollbar 
-                <div class="swiper-scrollbar"></div>-->
-            </div>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/roastedfruits1x.jpg 1x,
+              ../img/our-prod-sec-img/roastedfruits2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/roastedfruits1x.jpg"
+            alt="roastedfruits"
+          />
+          <h3 class="title-cards">ROASTED FRUITS</h3>
+          <p class="text-products">Dark chocolate</p>
+          <button class="button-products" type="button">66 UAH</button>
+        </li>
+        <li class="products-list-item">
+          <img
+            class="products-item-img"
+            srcset="
+              ../img/our-prod-sec-img/classicwhite1x.jpg 1x,
+              ../img/our-prod-sec-img/classicwhite2x.jpg 2x
+            "
+            src="../img/our-prod-sec-img/classicwhite1x.jpg"
+            alt="classicwhite"
+          />
+          <h3 class="title-cards">CLASSIC</h3>
+          <p class="text-products">White chocolate</p>
+          <button class="button-products" type="button">54 UAH</button>
+        </li>
+      </ul>
     </div>
-
+  </div>
 </section>
+
       <!-- Yurii -->
        <section class="section" id="sellers">
         <div class="container">
@@ -691,9 +704,9 @@
           </div>
         </div>
       </section>
-      <section class="section section-reviews" id="clients">
+      <section class="section section-reviews">
   <div class="container">
-    <h2 class="title">
+    <h2 class="title" id="clients">
       <span class="reviews-title-span">CHOCOLATE</span> IS LOVED
     </h2>
     <ul class="list reviews-list">
