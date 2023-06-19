@@ -1,0 +1,315 @@
+/* .container {
+  padding: 0 15px;
+  margin: 0 auto;
+} */
+.hero {
+  background-image: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1.jpg),
+    linear-gradient(180deg, rgba(17, 17, 17, 0) 0%, rgba(17, 17, 17, 0.4) 100%),
+    url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1@2x.jpg);
+
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  margin: 0 auto;
+  height: 620px;
+  border-radius: 30px;
+  position: relative;
+}
+.main-title {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 24px;
+
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+.hero-list {
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  padding: inherit;
+}
+.hero-link-list {
+  margin-top: 32px;
+
+  margin-bottom: 39px;
+  margin-right: 14px;
+}
+.btn-hero {
+  cursor: pointer;
+
+  gap: 14px;
+  width: 120px;
+  height: 41px;
+  border: none;
+  background: #fd9222;
+  order: none;
+  border-radius: 100px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+
+  color: #ffffff;
+}
+.btn-hero:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+.link-info-hero {
+  margin-right: auto;
+}
+.btn-info {
+  border: none;
+  background: rgba(28, 28, 28, 0);
+  width: 107px;
+  height: 28px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 14px;
+  /* identical to box height, or 117% */
+
+  letter-spacing: -0.03em;
+
+  color: #ffffff;
+  position: relative;
+}
+.icon-hero {
+  background: white;
+  border-radius: 20px;
+  position: ABSOLUTE;
+  margin-left: 10px;
+  top: 0;
+}
+.btn-hero-style {
+  background: rgba(28, 28, 28, 0);
+  border: 1px solid #ffffff;
+}
+@media screen and (min-width: 320px) {
+  .hero {
+    background-image: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1.jpg),
+      linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1@2x.jpg);
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    margin: 0 auto;
+    height: 620px;
+    border-radius: 20px;
+    position: relative;
+  }
+  .wrapper-hero {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    position: absolute;
+    bottom: 45px;
+    left: 20px;
+    flex-direction: column;
+  }
+  .link-info-hero {
+    position: absolute;
+    bottom: 28px;
+  }
+  .image-modal-hero {
+    position: absolute;
+
+    left: 25px;
+    width: 84px;
+    height: 69px;
+  }
+  .input-modal-hero {
+    width: 100%;
+
+    height: 85px;
+    position: relative;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 15px;
+  }
+  .wrapper-moda-hero {
+    margin-bottom: 8px;
+    width: 100%;
+  }
+  .label-info {
+    width: 100%;
+  }
+  .input-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 18px;
+    gap: 40px;
+    width: 100%;
+    height: 45px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+    margin-bottom: 14px;
+  }
+  .email-info {
+    width: 100%;
+    margin-bottom: 18px;
+  }
+  .email-input {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 14px 18px;
+    gap: 40px;
+    width: 100%;
+    height: 45px;
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 8px;
+  }
+  .logo-phone-info {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 18px;
+    gap: 44px;
+    isolation: isolate;
+
+    width: 263px;
+    height: 45px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+    background-color: #ffffff;
+  }
+  .number {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+
+    color: rgba(64, 64, 64, 0.3);
+    margin-top: auto;
+    margin-bottom: auto;
+  }
+  .text-label {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 14px;
+
+    letter-spacing: -0.02em;
+
+    color: #000000;
+  }
+  .input-with-svg {
+    background-image: url('../img/hero-sec-img/LeftIcon-hero.svg');
+    background-repeat: no-repeat;
+    background-position: 18px center;
+
+    text-align: center;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 10px 18px;
+    gap: 44px;
+    isolation: isolate;
+
+    height: 45px;
+
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    border-radius: 8px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    width: 704px;
+
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-sec-img/tablet/chocolate-covered-cocoa-powder.jpg),
+      url(../img/hero-sec-img/tablet/chocolate-covered-cocoa-powder@2x.jpg);
+    position: relative;
+  }
+  .wrapper-hero {
+    justify-content: inherit;
+    align-items: inherit;
+  }
+  .link-info-hero {
+    margin-left: auto;
+    position: absolute;
+
+    bottom: 90px;
+    right: 40px;
+  }
+  .main-title {
+    font-size: 28px;
+    line-height: 34px;
+  }
+}
+@media screen and (min-width: 1158px) {
+  .hero {
+    width: 1136px;
+    height: 600px;
+    left: 0px;
+    top: 0px;
+
+    background: linear-gradient(
+        180deg,
+        rgba(17, 17, 17, 0) 0%,
+        rgba(17, 17, 17, 0.4) 100%
+      ),
+      url(../img/hero-sec-img/desktop/chocolate-covered-cocoa-powder-1.jpg),
+      url(../img/hero-sec-img/desktop/chocolate-covered-cocoa-powder-1@2x.jpg);
+  }
+  .main-title {
+    width: 484px;
+    height: 102px;
+  }
+  .btn-hero {
+    width: 144px;
+    height: 45px;
+  }
+}
