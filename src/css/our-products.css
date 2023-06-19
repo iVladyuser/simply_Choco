@@ -96,9 +96,9 @@ span {
     max-width: 768px;
   }
 }
-img {
+/* img {
   max-width: 320px;
-} 
+}  */
 
 @media screen and (min-width: 1200px) {
 .container-products {
