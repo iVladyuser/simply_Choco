@@ -80,13 +80,7 @@ span {
   
   
 }
-.swiper {
-  
-}
-.swiper-slide {
 
-
-}
 @media screen and (min-width: 768px) {
   .products{
     flex-direction: row;
