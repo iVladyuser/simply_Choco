@@ -1,0 +1,12 @@
+.hero {
+  background: linear-gradient(
+      180deg,
+      rgba(17, 17, 17, 0) 0%,
+      rgba(17, 17, 17, 0.4) 100%
+    ),
+    url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1.jpg),
+    url(../img/hero-sec-img/chocolate-covered-cocoa-powder\ 1@2x.jpg);
+}
+.title-hero {
+  padding-top: 150px;
+}
