@@ -189,6 +189,7 @@
   }
 }
 
+
 .component-card-wrapper:nth-child(1) .component-card {
   background-color: #fd9222;
   color: var(--text-color-theme-dark);
