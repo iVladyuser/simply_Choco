@@ -1,55 +1,44 @@
-
 @media screen and (max-width: 767.9px) {
 }
 
 @media screen and (min-width: 768px) {
 }
 
-@media screen and (min-width: 1200px)
-{
-
+@media screen and (min-width: 1200px) {
 }
 
-
-
+/* flex-basis: calc((100% - 19px) / 4); */
 
 .orange-word {
   color: var(--orange-color);
 }
 
-
-
-
-
 @media screen and (min-width: 768px) {
-.component-description {
-  font-weight: 400;
-  font-size: 14px;
+  .component-description {
+    font-weight: 400;
+    font-size: 14px;
 
-  letter-spacing: -0.02em;
-  line-height: 1.29;
-  color: var(--main-color);
+    letter-spacing: -0.02em;
+    line-height: 1.29;
+    color: var(--main-color);
 
-  margin: 0 auto;
-  text-align: center;
-  width: 486px;
-  margin-bottom: 50px;
-  margin-top: 28px;
-  
-}
-
+    margin: 0 auto;
+    text-align: center;
+    width: 486px;
+    margin-bottom: 50px;
+    margin-top: 28px;
+  }
 }
 
 .component-menu {
   position: relative;
   overflow: hidden;
   display: flex;
+
   flex-wrap: nowrap;
   column-gap: 19px;
   row-gap: 0;
-
   margin-top: 50px;
-  
 }
 
 /* Styles for mobile devices */
@@ -61,7 +50,7 @@
 
   .component-description {
     font-size: 14px;
-    width: 335px;
+    /* width: 335px; */
     /* height: 108px; */
     margin-top: 14px;
     margin-bottom: 32px;
@@ -76,7 +65,7 @@
   }
 
   .component-card {
-    width: calc(50% - 10px);
+    /* width: calc(50% - 10px); */
     height: 270px;
     margin-bottom: 20px;
   }
@@ -94,212 +83,169 @@
     margin-top: 18px;
     font-size: 12px;
   }
-
-  
 }
 
-
-
-
 .item-back {
-    padding: 20px;
-  }
+  padding: 20px;
+}
 
-  .ingredient-card-title {
-    font-size: 14px;
-  }
+.ingredient-card-title {
+  font-size: 14px;
+}
 
-  .overlay-description {
-    margin-top: 8px;
-    padding: 10px;
-    font-size: 12px;
-    /* background-color: var; */
-  }
+.overlay-description {
+  margin-top: 8px;
+  padding: 10px;
+  font-size: 12px;
+  /* background-color: var; */
+}
 
-  .overlay-button {
-    padding: 4px 10px;
-    font-size: 8px;
-  }
+.overlay-button {
+  padding: 4px 10px;
+  font-size: 8px;
+}
 
-  .overlay-button:nth-child(1) {
-    background-color: var(--orange-color);
-    color: var(--text-color-theme-dark);
-    /* border: 1px solid var(--orange-color); */
-  }
+.overlay-button:nth-child(1) {
+  background-color: var(--orange-color);
+  color: var(--text-color-theme-dark);
+  /* border: 1px solid var(--orange-color); */
+}
 
-  .overlay-button:nth-child(2) {
-    background-color: var(--text-color-theme-dark);
-    color: var(--main-color);
-    /* border: 1px solid var(--orange-color); */
-  }
+.overlay-button:nth-child(2) {
+  background-color: var(--text-color-theme-dark);
+  color: var(--main-color);
+  /* border: 1px solid var(--orange-color); */
+}
 
-  .item-back::-webkit-scrollbar,
-  .item-back::-moz-scrollbar {
-    width: 5px;
-  }
-
-
-
-
-
-
-
+.item-back::-webkit-scrollbar,
+.item-back::-moz-scrollbar {
+  width: 5px;
+}
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.component-menu {
+  .component-menu {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     gap: 32px;
-}
-
-  .item-front {
-      padding: 28px;
-      border-radius: 20px;
-   }
-   .ingredient-img {
-      padding-left: 27px;
-      padding-right: 27px;
-   }
-   .component-card-item-title {
-      margin-top: 25px;
-   }
-   .item-back {
-      padding: 28px;
-   }
-   .component-menu {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      align-items: center;
-      gap: 32px;
-   }
-
-   .item-back {
-   padding: 28px;
-   }
-
-}
-
-
-
-
-.component-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 270px;
-  height: 270px;
-  border-radius: 15px;
-  /* border: 1px solid var(--orange-color); */
-  position: relative;
-  cursor: pointer;
-
-transition: border-color 0.3s ease, transform 0.5s ease-in-out;
-  
-}
-
-
-
-@media screen and (max-width: 1200px) {
-
-  .component-card {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 336px;
-  height: 270px;
-  border-radius: 15px;
-  /* border: 1px solid var(--orange-color); */
-  position: relative;
-  cursor: pointer;
-
-transition: border-color 0.3s ease, transform 0.5s ease-in-out;
-  
-}
-
-}
-
-
-
-
-
-.component-card-wrapper:nth-child(1)
-.component-card {
-  background-color: #FD9222;
-  color: var(--text-color-theme-dark);
-  border: 1px solid var(--orange-color);
   }
 
-.component-card-wrapper:nth-child(3)
+  .item-front {
+    padding: 28px;
+    border-radius: 20px;
+  }
+  .ingredient-img {
+    padding-left: 27px;
+    padding-right: 27px;
+  }
+  .component-card-item-title {
+    margin-top: 25px;
+  }
+  .item-back {
+    padding: 28px;
+  }
+  .component-menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+  }
+
+  .item-back {
+    padding: 28px;
+  }
+}
+
 .component-card {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  /* width: 270px; */
+  height: 270px;
+  border-radius: 15px;
+  /* border: 1px solid var(--orange-color); */
+  position: relative;
+  cursor: pointer;
+
+  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 1200px) {
+  .component-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* width: 336px; */
+    height: 270px;
+    border-radius: 15px;
+    /* border: 1px solid var(--orange-color); */
+    position: relative;
+    cursor: pointer;
+
+    transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+  }
+}
+
+.component-card-wrapper:nth-child(1) .component-card {
+  background-color: #fd9222;
+  color: var(--text-color-theme-dark);
+  border: 1px solid var(--orange-color);
+}
+
+.component-card-wrapper:nth-child(3) .component-card {
   background-color: var(--background-color);
   color: var(--text-color-theme-dark);
   border: 1px solid var(--main-color);
 }
 
-
-.component-card-wrapper:nth-child(4)
-.component-card {
+.component-card-wrapper:nth-child(4) .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
   border: 1px solid var(--orange-color);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-
-.component-card-wrapper:nth-child(2)
-.component-card {
+.component-card-wrapper:nth-child(2) .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
   border: 1px solid var(--orange-color);
   transition: background-color 0.5s ease, color 0.5s ease;
 }
 
-
-.component-card-wrapper:nth-child(2)
-.component-card:hover {
+.component-card-wrapper:nth-child(2) .component-card:hover {
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
-  
+
   border: 1px solid var(--text-color-theme-dark);
-transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 }
 
 /* Hover  */
 
-.component-card-wrapper:nth-child(1)
-.component-card:hover {
+.component-card-wrapper:nth-child(1) .component-card:hover {
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
   transition: background-color 0.5s ease, color 0.5s ease;
-   border: none;
-  }
+  border: none;
+}
 
-
-.component-card-wrapper:nth-child(4)
-.component-card:hover {
-    background-color: var(--text-color-theme-dark);
+.component-card-wrapper:nth-child(4) .component-card:hover {
+  background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
-  
+
   border: 1px solid var(--text-color-theme-dark);
-transition: border-color 0.3s ease, transform 0.5s ease-in-out;
-  }
+  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+}
 
-
-  .component-card-wrapper:nth-child(3)
-.component-card:hover {
+.component-card-wrapper:nth-child(3) .component-card:hover {
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
   transition: background-color 0.5s ease, color 0.5s ease;
   border: 1px solid var(--text-color-theme-dark);
 }
-
-
-
-
-
 
 .component-card-item-title {
   font-style: normal;
@@ -310,44 +256,25 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   text-transform: uppercase;
 
   margin-top: 36px;
-  
 }
-
-
 
 .item-front {
   padding: 28px;
-  
-  
 }
-
-
-
-
 
 .ingredient-img {
-    display: block;
-    max-width: 100%;
-    height: auto;
-    
-    
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
-
-
-
 /* item back  */
-
-
 
 .overlay-description {
   background-color: var(--text-color-theme-dark);
   position: relative;
   margin-top: 14px;
   color: var(--main-color);
-  
-
-
 
   font-weight: 400;
   font-size: 14px;
@@ -356,81 +283,84 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 
   margin-bottom: 8px;
   padding: 20x;
+  overflow: scroll;
+  max-height: 166px;
 }
-
-
 
 @media screen and (max-width: 767.9px) {
-.ingredient-card-item {
-
-  position: absolute;
-  width: 335px;
-  height: 270px;
-  top: 0;
-  left: 0;
-  /* border: 1px solid var(--text-color-theme-dark);   */
-  background-color: var(--text-color-theme-dark);
-  border-radius: 15px;
-
-} 
+  .ingredient-card-item {
+    position: absolute;
+    /* width: 335px; */
+    height: 270px;
+    top: 0;
+    left: 0;
+    /* border: 1px solid var(--text-color-theme-dark);   */
+    background-color: var(--text-color-theme-dark);
+    border-radius: 15px;
+  }
 }
-
 
 @media screen and (min-width: 768px) {
-.ingredient-card-item {
-
-  position: absolute;
-  width: 100%;
-  /* height: 100%; */
-  top: 0;
-  left: 0;
-  border: 1px solid var(--text-color-theme-dark);  
+  .ingredient-card-item {
+    position: absolute;
+    width: 100%;
+    /* height: 100%; */
+    top: 0;
+    left: 0;
+    border: 1px solid var(--text-color-theme-dark);
+  }
 }
 
+@media screen and (min-width: 1200px) {
+  .ingredient-card-item {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    border: 1px solid var(--text-color-theme-dark);
+    background-color: var(--text-color-theme-dark);
+    border-radius: 15px;
+  }
 }
 
-
-@media screen and (min-width: 1200px)
-{
-.ingredient-card-item {
-
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  border: 1px solid var(--text-color-theme-dark);  
-  background-color: var(--text-color-theme-dark);
-  border-radius: 15px;
-
-} 
-
-
+@media screen and (max-width: 767.9px) {
 }
 
+@media screen and (min-width: 768px) {
+  .component-card .ingredient-card-item {
+    transform: translateY(107%);
+    transition: transform 0.5s ease-in-out;
+  }
+}
 
-.component-card .ingredient-card-item {
-  transform: translateY(100%);
-  transition: transform 0.5s ease-in-out;
-   
+@media screen and (min-width: 1200px) {
+  .component-card .ingredient-card-item {
+    transform: translateY(107%);
+    transition: transform 0.5s ease-in-out;
+  }
+}
+
+@media screen and (max-width: 767.9px) {
+  .component-card .ingredient-card-item {
+    transform: translateY(107%);
+    transition: transform 0.5s ease-in-out;
+  }
 }
 
 .component-card:hover .ingredient-card-item {
   transform: translateY(0%);
   outline: none;
- 
 }
-
 
 .ingredient-card-title {
   font-style: normal;
   font-weight: 600;
-  font-size:18px;
+  font-size: 18px;
   line-height: 1.22;
   letter-spacing: -0.03em;
   text-transform: uppercase;
   color: var(--main-color);
-
 
   margin-bottom: 8px;
 }
@@ -439,16 +369,14 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   display: flex;
   gap: 6px;
   /* border: 1px solid var(--orange-color); */
-  
 }
 
 .overlay-button {
-    display: flex;
-    padding: 6px 16px;
-    border-radius: 35px;
-    font-size: 10px;
-    line-height: 1.5;
-    
+  display: flex;
+  padding: 6px 16px;
+  border-radius: 35px;
+  font-size: 10px;
+  line-height: 1.5;
 }
 
 .overlay-button:nth-child(1) {
@@ -463,40 +391,31 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   border: 1px solid var(--orange-color);
 }
 
-
-
-
 @media screen and (min-width: 1200px) {
-.item-back {
-  
-  
-  background-color: var(--text-color-theme-dark);
-  color: var(--main-color);
-  border-radius: 13px;
-  backface-visibility: hidden;
-  border: 1px solid var(--text-color-theme-dark);
-  padding: 20px;
-  overflow: auto;
-  /* overflow: hidden; */
+  .item-back {
+    background-color: var(--text-color-theme-dark);
+    color: var(--main-color);
+    border-radius: 13px;
+    backface-visibility: hidden;
+    border: 1px solid var(--text-color-theme-dark);
+    padding: 20px;
+    overflow: auto;
+    /* overflow: hidden; */
+  }
 }
-
-}
-
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
-.item-back {
-  /* width: 336px;
+  .item-back {
+    /* width: 336px;
   height: 270px; */
-  background-color: var(--text-color-theme-dark);
-  color: var(--main-color);
-  border-radius: 13px;
-  backface-visibility: hidden;
-  border: 1px solid var(--text-color-theme-dark);
-  overflow: auto;
+    background-color: var(--text-color-theme-dark);
+    color: var(--main-color);
+    border-radius: 13px;
+    backface-visibility: hidden;
+    border: 1px solid var(--text-color-theme-dark);
+    overflow: auto;
+  }
 }
-}
-
-
 
 .item-back::-webkit-scrollbar {
   width: 5px;
@@ -505,7 +424,6 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
 .item-back::-webkit-scrollbar-track {
   background-color: transparent;
 }
-
 
 .item-back::-webkit-scrollbar-thumb {
   background-color: transparent;
@@ -528,13 +446,9 @@ transition: border-color 0.3s ease, transform 0.5s ease-in-out;
   background-color: transparent;
 }
 
-
-
 .item-back::after {
-  content: "";
+  content: '';
   display: block;
   height: 10px;
   width: 230px;
 }
-
-

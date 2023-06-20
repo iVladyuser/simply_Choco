@@ -142,8 +142,8 @@
   gap: 18px;
 }
 
-.mobile-social-networks-icon:hover,
-.mobile-social-networks-icon:focus {
+.mobile-social-networks-link:hover,
+.mobile-social-networks-link:focus {
   fill: var(--orange-color);
 }
 
@@ -153,16 +153,11 @@
   height: 22px;
 }
 
-.mobile-social-networks-icon {
+.mobile-social-networks-link {
   fill: var(--text-color-theme-dark);
 }
 
 @media screen and (min-width: 768px) {
-  /* .container {
-    padding-left: 32px;
-    padding-right: 32px;
-  } */
-
   .header {
     padding: 24px 0;
   }
@@ -216,11 +211,11 @@
     gap: 18px;
   }
 
-  .icon {
+  .social-networks-link {
     fill: var(--main-color);
   }
-  .icon:hover,
-  .icon:focus {
+  .social-networks-link:hover,
+  .social-networks-link:focus {
     fill: var(--orange-color);
   }
   .instagram-svg,
