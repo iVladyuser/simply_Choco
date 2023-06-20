@@ -129,6 +129,8 @@
   letter-spacing: -0.02em;
 
   color: var(--text-color-theme-dark);
+
+  transition: color 250ms var(--transition-cubic);
 }
 .mobile-nav-link:hover,
 .mobile-nav-link:focus {
@@ -154,6 +156,7 @@
 }
 
 .mobile-social-networks-link {
+  transition: color 250ms var(--transition-cubic);
   fill: var(--text-color-theme-dark);
 }
 
