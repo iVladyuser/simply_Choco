@@ -69,6 +69,7 @@
 .btn-hero:hover {
   background-color: #fcf1e0;
   color: #fd9222;
+  transition: var(--transition-cubic);
 }
 
 .hero-wrapper-scroll {
