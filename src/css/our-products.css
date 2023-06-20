@@ -6,7 +6,6 @@
   display: block;
   position: relative;
   overflow-y: hidden;
-section-products
   height: 409px;
 }
 .products-list {
@@ -57,15 +56,6 @@ section-products
   color: var(--orange-color);
 }
 
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  margin-top: 32px;
-}
 .title-cards {
   margin-top: 8px;
   font-weight: 600;
