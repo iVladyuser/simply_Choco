@@ -164,6 +164,11 @@
     font-size: 14px;
     line-height: 16px;
   }
+
+  .mobile-menu-close-btn {
+    top: 24px;
+    right: 32px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .menu-burger-btn {
