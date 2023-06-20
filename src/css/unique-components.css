@@ -369,6 +369,8 @@
 }
 
 
+
+
 .component-card:hover .ingredient-card-item {
   transform: translateY(0%);
   outline: none;
