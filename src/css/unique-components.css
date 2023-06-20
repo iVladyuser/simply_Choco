@@ -170,7 +170,7 @@
   position: relative;
   cursor: pointer;
 
-  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+   transition: border-color 0.3s var(--transition-cubic), transform 0.5s var(--transition-cubic);
 }
 
 @media screen and (max-width: 1200px) {
@@ -191,7 +191,7 @@
 
 
 .component-card-wrapper:nth-child(1) .component-card {
-  background-color: #fd9222;
+  background-color: var(--orange-color);
   color: var(--text-color-theme-dark);
   border: 1px solid var(--orange-color);
 }
@@ -206,14 +206,14 @@
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
   border: 1px solid var(--orange-color);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s var(--transition-cubic), color 0.5s var(--transition-cubic);
 }
 
 .component-card-wrapper:nth-child(2) .component-card {
   background-color: var(--text-color-theme-dark);
   color: var(--main-color);
   border: 1px solid var(--orange-color);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: background-color 0.5s var(--transition-cubic), color 0.5s var(--transition-cubic);
 }
 
 .component-card-wrapper:nth-child(2) .component-card:hover {
@@ -221,7 +221,7 @@
   color: var(--text-color-theme-dark);
 
   border: 1px solid var(--text-color-theme-dark);
-  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+  transition: border-color 0.3s var(--transition-cubic), transform 0.5s var(--transition-cubic);
 }
 
 /* Hover  */
@@ -229,7 +229,7 @@
 .component-card-wrapper:nth-child(1) .component-card:hover {
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.3s var(--transition-cubic), transform 0.5s var(--transition-cubic);
   border: 1px solid var(--text-color-theme-dark);
 }
 
@@ -238,13 +238,13 @@
   color: var(--text-color-theme-dark);
 
   border: 1px solid var(--text-color-theme-dark);
-  transition: border-color 0.3s ease, transform 0.5s ease-in-out;
+ transition: border-color 0.3s var(--transition-cubic), transform 0.5s var(--transition-cubic);
 }
 
 .component-card-wrapper:nth-child(3) .component-card:hover {
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
-  transition: background-color 0.5s ease, color 0.5s ease;
+  transition: border-color 0.3s var(--transition-cubic), transform 0.5s var(--transition-cubic);
   border: 1px solid var(--text-color-theme-dark);
 }
 
@@ -350,23 +350,24 @@
 @media screen and (min-width: 768px) {
   .component-card .ingredient-card-item {
     transform: translateY(109%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s var(--transition-cubic);
   }
 }
 
 @media screen and (min-width: 1200px) {
   .component-card .ingredient-card-item {
     transform: translateY(109%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s var(--transition-cubic);
   }
 }
 
 @media screen and (max-width: 767.9px) {
   .component-card .ingredient-card-item {
     transform: translateY(109%);
-    transition: transform 0.5s ease-in-out;
+    transition: transform 0.5s var(--transition-cubic);
   }
 }
+
 
 .component-card:hover .ingredient-card-item {
   transform: translateY(0%);
