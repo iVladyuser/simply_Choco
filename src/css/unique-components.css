@@ -275,16 +275,35 @@
   position: relative;
   margin-top: 14px;
   color: var(--main-color);
-
   font-weight: 400;
   font-size: 14px;
   line-height: 1.28;
   letter-spacing: -0.02em;
-
   margin-bottom: 8px;
-  padding: 20x;
-  overflow: scroll;
+  padding: 20px;
+  overflow: auto;
   max-height: 166px;
+}
+
+.overlay-description::-webkit-scrollbar {
+  width: 5px;
+}
+
+.overlay-description::-webkit-scrollbar-thumb {
+  background-color: #888;
+  border-radius: 2.5px;
+}
+
+.overlay-description::-webkit-scrollbar-thumb:hover {
+  background-color: #555;
+}
+
+.overlay-description::-webkit-scrollbar-track {
+  background-color: #f4f4f4;
+}
+
+.overlay-description::-webkit-scrollbar-track:hover {
+  background-color: #ccc;
 }
 
 @media screen and (max-width: 767.9px) {
@@ -399,8 +418,8 @@
     backface-visibility: hidden;
     border: 1px solid var(--text-color-theme-dark);
     padding: 20px;
-    overflow: auto;
-    /* overflow: hidden; */
+    overflow-x: hidden; 
+    overflow-y: auto; 
   }
 }
 
