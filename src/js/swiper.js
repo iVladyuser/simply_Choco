@@ -1,4 +1,11 @@
 const swiper = new Swiper('.swiper', {
+  effect: 'cards',
+  cardsEffect: {
+    perSlideOffset: 10,
+    perSlideRotate: 4,
+    rotate: true,
+    slideShadows: true,
+  },
   // Optional parameters
   direction: 'horizontal', // что бы расположить точки снизу
   loop: true,

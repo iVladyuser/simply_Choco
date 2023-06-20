@@ -1,0 +1,142 @@
+/* ================ MOBILE ================*/
+
+.advantages-section {
+  background-color: var(--background-color);
+  margin-top: 72px;
+}
+
+.advantages-item {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.advantages-list {
+  padding-bottom: 18px;
+  column-gap: 20px;
+}
+
+.advantages-list:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.advantages-icon {
+  padding: 15px;
+  margin-bottom: 22px;
+  width: 62px;
+  height: 62px;
+  display: block;
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 50%;
+  transition: 2000ms var(--transition-cubic);
+}
+
+.advantages-title {
+  padding-bottom: 18px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.2;
+  color: var(--text-color-theme-dark);
+}
+
+.advantages-text {
+  padding-right: 28px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+.advantages-icon:hover,
+.advantages-icon:focus {
+  animation-name: rotateIn;
+  animation-duration: 2000ms;
+}
+
+/* ================ TABLET ================*/
+
+@media screen and (min-width: 768px) {
+  
+    .advantages-section {
+      margin-top: 50px;
+      
+    }
+
+
+  .advantages-item {
+    display: flex;
+    column-gap: 32px;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    padding-bottom: 50px;
+  }
+  .advantages-list {
+    flex-basis: calc((100% - 32px) / 2);
+  }
+  
+    .advantages-icon {
+      transition: 2000ms var(--transition-cubic);
+    }
+    .advantages-icon:hover,
+    .advantages-icon:focus {
+      animation-name: rotateIn;
+      animation-duration: 2000ms;
+    }
+}
+
+/* ================ DESKTOP ================*/
+
+@media screen and (min-width: 1200px) {
+  .advantages-box {
+    padding: 0;
+    
+  }
+
+    .advantages-section {
+      margin-top: 72px;
+  
+    }
+
+  .advantages-item {
+    gap: 70px;
+    flex-wrap: nowrap;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  .advantages-text {
+    padding-right: 18px;
+  }
+
+  .advantages-list {
+    padding-bottom: 0;
+    margin-bottom: 0;
+    position: relative;
+  }
+
+  .advantages-item > .advantages-list {
+    margin-bottom: 0;
+  }
+
+  .line::after {
+    content: '';
+    transform: rotate(90deg);
+    position: absolute;
+    width: 124px;
+    top: 50%;
+    left: 80%;
+    height: 1px;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+  }
+
+    .advantages-icon{
+      transition: 2000ms var(--transition-cubic);
+    }
+
+  .advantages-icon:hover,
+  .advantages-icon:focus {
+    animation-name: rotateIn;
+    animation-duration: 2000ms;
+  }
+}

@@ -1,0 +1,105 @@
+<section class="section section-reviews" id="clients">
+  <div class="container">
+    <h2 class="title">
+      <span class="reviews-title-span">CHOCOLATE</span> IS LOVED
+    </h2>
+    <ul class="list reviews-list">
+      <li class="reviews-item">
+        <img
+          class="reviews-img"
+          srcset="
+            ./img/reviews-sec-img/victoria.png 1x,
+            ./img/reviews-sec-img/victoria.png 2x
+          "
+          src="./img/reviews-sec-img/victoria.png"
+          alt="reviews-photo"
+          width="80"
+        />
+        <h3 class="rewiews-subtitle">Victoria Dobrzhanska</h3>
+        <p class="reviews-description">
+          I love this chocolate bar. Perfect combination of light crispy wafer,
+          covered in a thin layer chocolate.
+        </p>
+      </li>
+      <li class="reviews-item reviews-item-mobile">
+        <img
+          class="reviews-img"
+          srcset="
+            ./img/reviews-sec-img/nazar.png 1x,
+            ./img/reviews-sec-img/nazar.png 2x
+          "
+          src="./img/reviews-sec-img/nazar.png"
+          alt="reviews-photo"
+          width="80"
+        />
+        <h3 class="rewiews-subtitle">Nazar Babenko</h3>
+        <p class="reviews-description">
+          This chocolate confection is a delight! A delight! The wafer is light
+          and crisp, the hazelnut cream is smooth, and the chocolate is good.
+        </p>
+      </li>
+      <li class="reviews-item reviews-item-tablet">
+        <img
+          class="reviews-img"
+          srcset="
+            ./img/reviews-sec-img/olena.png 1x,
+            ./img/reviews-sec-img/olena.png 2x
+          "
+          src="./img/reviews-sec-img/olena.png"
+          alt="reviews-photo"
+          width="80"
+        />
+        <h3 class="rewiews-subtitle">Olena Kampusch</h3>
+        <p class="reviews-description">
+          Chocolate is a family favourite treat. Love the delicious smooth
+          chocolate and the creaminess inside. The wafer is soft but crunchy.
+        </p>
+      </li>
+    </ul>
+  </div>
+
+  <button class="btn-review" type="button">Leave a review</button>
+</section>
+<div class="review-backdrop">
+  <div class="review-modal">
+    <button class="review-modal-close-btn" type="button">
+      <svg class="review-modal-close-icon" width="28" height="28">
+        <use href="/img/sprite.svg#icon-close"></use>
+      </svg>
+    </button>
+    <h2 class="title review-modal-title">
+      LEAVE A REVIEW ABOUT <span class="modal-title-accent">OUR CHOCOLATE</span>
+    </h2>
+    <form class="review-form">
+      <label
+        ><input
+          class="review-form-input"
+          type="text"
+          placeholder="Name" /></label
+      ><label
+        ><input class="review-form-input" type="email" placeholder="Email"
+      /></label>
+      <div class="review-input-wrapper">
+        <div class="input-icon-block">
+          <svg width="32" height="24">
+            <use href="/img/sprite.svg#icon-flag-ua"></use>
+          </svg>
+          <p>+380</p>
+        </div>
+        <label
+          ><input
+            class="review-form-tel-input"
+            type="tel"
+            placeholder="Phone number"
+        /></label>
+      </div>
+      <label>
+        <textarea
+          class="review-form-textarea"
+          placeholder="Enter text"
+        ></textarea>
+      </label>
+    </form>
+    <button class="review-form-btn" tupe="submit">Send</button>
+  </div>
+</div>
