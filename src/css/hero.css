@@ -1,17 +1,11 @@
 .hero {
-  padding: 0 32px;
+  padding: 0 20px;
 }
+
 .container-hero {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-width: 320px;
-  max-width: 375px;
-
-  margin-left: auto;
-  margin-right: auto;
-  padding: 395px 20px 20px;
-
   border-radius: 20px;
   background-image: linear-gradient(
       180deg,
@@ -52,7 +46,6 @@
   line-height: 1.2;
   font-size: 20px;
   text-align: start;
-  width: 295px;
   height: 72px;
   letter-spacing: -0.03em;
 }
@@ -106,9 +99,18 @@
   background: rgba(28, 28, 28, 0);
   border: 1px solid #ffffff;
 }
-@media screen and (min-width: 768px) {
+
+@media screen and (max-width: 767.9px) {
   .container-hero {
-    min-width: 768;
+    max-width: 335px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    padding: 0 32px;
+  }
+  .container-hero {
+    width: 704px;
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,
@@ -120,6 +122,7 @@
     screen and (min-resolution: 192dpi),
     screen and (min-resolution: 2dppx) {
     .container-hero {
+      padding: 671px 40px 40px;
       background-image: linear-gradient(
           180deg,
           rgba(17, 17, 17, 0) 0%,
@@ -146,7 +149,8 @@
 
 @media screen and (min-width: 1200px) {
   .container-hero {
-    min-height: 1200px;
+    width: 1136px;
+    padding: 381px 40px 40px;
     background-image: linear-gradient(
         180deg,
         rgba(17, 17, 17, 0) 0%,

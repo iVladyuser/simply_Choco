@@ -1,11 +1,12 @@
 const swiper = new Swiper('.swiper', {
   // Optional parameters
-  direction: 'vertical',
+  direction: 'horizontal', // что бы расположить точки снизу
   loop: true,
 
   // If we need pagination
   pagination: {
     el: '.swiper-pagination',
+    clickable: true, // что-бы сделать пагинацию кликабельной
   },
 
   // Navigation arrows

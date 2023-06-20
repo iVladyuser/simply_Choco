@@ -1,12 +1,43 @@
 .section-cards {
   padding: 0px;
   padding-top: 72px;
-  
 }
 .container-products {
   display: block;
   position: relative;
   overflow-y: hidden;
+  height: 409px;
+}
+.products-list {
+  display: flex;
+  margin-top: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 18px;
+}
+/* .list-products {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding-top: 32px;
+  padding-left: 52px;
+  padding-right: 52px;
+  width: 330px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+} */
+.products-list-item {
+  height: 364px;
+  width: 270px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+
   scroll-snap-type: x mandatory;
   height: 453px;
   max-width: 335px;
@@ -21,21 +52,10 @@
   text-align: center;
   margin-bottom: 32px;
 }
-span {
+.span-products {
   color: var(--orange-color);
 }
-.products {
-  position: absolute;
-  left: 0;
-  top: 0;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 8px;
-  margin-top: 32px;
 
-  
-}
 .title-cards {
   margin-top: 8px;
   font-weight: 600;
@@ -43,7 +63,6 @@ span {
   line-height: 24px;
   text-align: center;
   color: #111;
-  
 }
 .text-products {
   color: rgba(17, 17, 17, 0.7);
@@ -61,14 +80,15 @@ span {
   gap: 14px;
   margin-top: 18px;
   margin-bottom: 32px;
-  background: #FAFAFA;
+  background: #fafafa;
   font-weight: 600;
   color: #111111;
   font-size: 14px;
-  line-height: 17px;border: 1px solid rgba(17, 17, 17, 0.1);
+  line-height: 17px;
+  border: 1px solid rgba(17, 17, 17, 0.1);
 }
 .list-products {
-  background: #FFFFFF;
+  background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
   padding-top: 32px;
@@ -77,30 +97,19 @@ span {
   width: 330px;
   scroll-snap-align: start;
   scroll-snap-stop: normal;
-  
-  
 }
-.swiper {
-  
-}
-.swiper-slide {
 
-
-}
 @media screen and (min-width: 768px) {
-  .products{
+  .products {
     flex-direction: row;
   }
   .container-products {
     max-width: 768px;
   }
 }
-img {
-  max-width: 320px;
-} 
 
 @media screen and (min-width: 1200px) {
-.container-products {
+  .container-products {
     max-width: 1200px;
   }
 }

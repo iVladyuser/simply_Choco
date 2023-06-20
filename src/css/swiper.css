@@ -1,0 +1,33 @@
+.swiper {
+width: 100%;
+    height: 100%;
+    
+}
+.swiper-pagination {
+    
+ 
+}
+.swiper-slide {
+
+    object-fit: cover;
+    display: block;
+   
+  
+     
+}
+.swiper-slide-max {
+    display: none;
+}
+/* @media screen and (max-width: 1200px) {
+    .swiper {
+        width: 1200px;
+    }
+        .swiper-slide-max {
+            display: block;
+        }
+}
+@media screen and (max-width: 768px) {
+    .swiper {
+        width: 768px;
+    }
+}*/

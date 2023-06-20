@@ -27,7 +27,7 @@
 }
 
 .how-made-img {
-  min-width: 335px;
+  /* max-width: 335px; */
   height: 500px;
   border-radius: 15px;
   display: block;
