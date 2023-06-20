@@ -229,7 +229,7 @@
   background-color: var(--text-color-theme-dark);
   color: var(--text-color-theme-dark);
   transition: background-color 0.5s ease, color 0.5s ease;
-  border: none;
+  border: 1px solid var(--text-color-theme-dark);
 }
 
 .component-card-wrapper:nth-child(4) .component-card:hover {
@@ -284,7 +284,6 @@
   overflow: auto;
   max-height: 166px;
 }
-
 
 .overlay-description::-webkit-scrollbar {
   width: 5px;
@@ -349,21 +348,21 @@
 
 @media screen and (min-width: 768px) {
   .component-card .ingredient-card-item {
-    transform: translateY(107%);
+    transform: translateY(109%);
     transition: transform 0.5s ease-in-out;
   }
 }
 
 @media screen and (min-width: 1200px) {
   .component-card .ingredient-card-item {
-    transform: translateY(107%);
+    transform: translateY(109%);
     transition: transform 0.5s ease-in-out;
   }
 }
 
 @media screen and (max-width: 767.9px) {
   .component-card .ingredient-card-item {
-    transform: translateY(107%);
+    transform: translateY(109%);
     transition: transform 0.5s ease-in-out;
   }
 }
