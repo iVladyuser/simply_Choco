@@ -6,6 +6,39 @@
   display: block;
   position: relative;
   overflow-y: hidden;
+section-products
+  height: 409px;
+}
+.products-list {
+  display: flex;
+  margin-top: 32px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  gap: 18px;
+}
+/* .list-products {
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  padding-top: 32px;
+  padding-left: 52px;
+  padding-right: 52px;
+  width: 330px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+} */
+.products-list-item {
+  height: 364px;
+  width: 270px;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 15px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
+
   scroll-snap-type: x mandatory;
   height: 453px;
   max-width: 335px;
@@ -20,10 +53,10 @@
   text-align: center;
   margin-bottom: 32px;
 }
-span {
+.span-products {
   color: var(--orange-color);
 }
-.products {
+
   position: absolute;
   left: 0;
   top: 0;
