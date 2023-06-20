@@ -200,3 +200,250 @@
   }
 
 }
+
+.modal-buy{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(46, 47, 66, 0.4);
+  opacity: 1;
+  visibility: visible;
+  pointer-events: auto;
+
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1), visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.modal{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 609px;
+  min-height: 576px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
+  padding: 48px;
+  background: #FAFAFA;
+  border-radius: 15px;
+}
+
+.modal-close-btn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  width: 28px;
+  height: 28px;
+  background-color: #E7E9FC;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  
+}
+
+
+
+.modal-close-btn:hover,
+.modal-close-btn:focus{
+  border: none;
+}
+
+
+.modal-close-btn:hover .modal-close-icon,
+.modal-close-btn:focus .modal-close-icon{
+  fill: var(--white-color);
+  
+}
+
+
+
+.modal-close-icon{
+  fill: #2E2F42;
+  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.is-hidden{
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.contact-form-text{
+  
+  margin-bottom: 32px;
+  
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: -0.03em;
+  
+
+}
+
+.contact-form-text-span{
+  color: #FD9222;
+}
+
+.modal-card-list{
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.modal-img{
+  position: absolute;
+  top: 24px;
+  left: 20px;
+ 
+}
+
+.modal-cards-btn{
+  margin-top: 14px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0.8;
+  color: #111111;
+  padding: 8px 27px;
+  
+  background: #FAFAFA;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 100px;
+  position: absolute;
+  bottom: 18px;
+  left: 32px;
+
+
+
+}
+
+
+.modal-card-item{
+  position: relative;
+  
+  width: 160px;
+  height: 196px;
+  background: #fff;
+}
+
+.contact-form-field-desc{
+  
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 0.7;
+  letter-spacing: 0.02em;
+  color: #000000;
+  display: block;
+  margin-bottom: 8px;
+
+
+}
+
+.contact-form-field-wrapper{
+  display: block;
+  margin-bottom: 18px;
+}
+
+.contact-form-wrapper{
+  margin-bottom: 16px;
+}
+
+.contact-form-input{
+  width: 100%;
+  height: 66px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.8;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  padding: 22px 24px;
+  color: rgba(64, 64, 64, 0.3);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+ 
+}
+
+.phone{
+  padding-left: 117px;
+}
+
+.contact-form-textarea{
+  resize: none;
+  width: 100%;
+  height: 137px;
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 0.8;
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  padding: 22px 24px;
+  color: rgba(64, 64, 64, 0.3);
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 13px;
+  
+}
+
+
+
+.contact-form-span{
+  color: var(--logo-color);
+  text-decoration: underline;
+  
+}
+
+.contact-form-sumbit{
+  display: block;
+  margin-top: 18px;
+  height: 50px;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 0.8;
+  color: #fff;
+  padding: 14px 40px;
+  background: #fd9222;
+  border: none;
+}
+
+.contact-form-sumbit:hover {
+  background-color: #fcf1e0;
+  color: #fd9222;
+}
+
+.contact-form-input-wrapper{
+  position: relative;
+  display: block;
+ 
+}
+
+.personal{
+  display: flex;
+  flex-direction: row;
+  gap: 21px;
+}
+
+.contact-form-input:hover,
+.contact-form-input:focus,
+.contact-form-textarea:hover,
+.contact-form-textarea:focus{
+
+  outline: none;
+}
+
+
