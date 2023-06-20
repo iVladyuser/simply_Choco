@@ -29,20 +29,25 @@
   scroll-snap-stop: normal;
 } */
 .products-list-item {
+  height: 364px;
   width: 270px;
   padding-top: 32px;
   padding-bottom: 32px;
   background: #ffffff;
   border: 1px solid rgba(17, 17, 17, 0.1);
   border-radius: 15px;
+  scroll-snap-align: start;
+  scroll-snap-stop: normal;
 }
 .products-item-img {
   margin-left: auto;
   margin-right: auto;
 }
-span {
+.span-products {
   color: var(--orange-color);
 }
+
+
 /* .products {
   position: absolute;
   left: 0;

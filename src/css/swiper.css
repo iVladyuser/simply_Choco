@@ -1,5 +1,34 @@
 .swiper {
-    width: 600px;
-    height: 300px;
-    display: flex;
+    width: 1200px;
+    height: 364px;
+    
 }
+.swiper-pagination {
+    
+ 
+}
+.swiper-slide {
+
+    object-fit: cover;
+    display: block;
+    width: 100%;
+    height: 100%;
+    display: flex;
+     
+}
+.swiper-slide-max {
+    display: none;
+}
+/* @media screen and (max-width: 1200px) {
+    .swiper {
+        width: 1200px;
+    }
+        .swiper-slide-max {
+            display: block;
+        }
+}
+@media screen and (max-width: 768px) {
+    .swiper {
+        width: 768px;
+    }
+}*/
