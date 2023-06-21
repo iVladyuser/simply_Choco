@@ -1,27 +1,33 @@
-<div class="backdrop is-hidden" data-modal>
-<div class="modal-window-explore">
-  <div class="modal-window-chocolate">
-    <button data-modal-close class="modal-window-chocolate-button">
-      <svg class="modal-explore" width="12" height="12">
-       <use class="mobile-menu-close-icon" href="./img/sprite.svg#icon-close"></use>  
-      </svg>
-    </button>
-  </div>
-  
-  <p class="modal-window-title">
-    Explore our<br />
-    <span class="span-products">new chocolate</span> first!</p>
-   
-  <form class="modal-window-form" action="">
-    <div class="modal-window">
-      <input
-        class="form-modal-window"
-        type="text"
-        placeholder="Enter your email"
-      />
-      <button class="subscribe-modal-window-btn">Submit</button>
+<div class="backdrop">
+  <div class="modal-window-explore modal" data-modal="3">
+    <div class="modal-window-chocolate">
+      <button
+        data-modal-close
+        class="modal-window-chocolate-button js-modal-close"
+      >
+        <svg class="modal-explore" width="12" height="12">
+          <use
+            class="mobile-menu-close-icon"
+            href="./img/sprite.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
     </div>
-  </form>
 
-</div>
+    <p class="modal-window-title">
+      Explore our<br />
+      <span class="span-products">new chocolate</span> first!
+    </p>
+
+    <form class="modal-window-form" action="">
+      <div class="modal-window">
+        <input
+          class="form-modal-window"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <button class="subscribe-modal-window-btn">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>

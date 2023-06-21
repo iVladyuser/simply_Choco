@@ -1,5 +1,5 @@
 /*modal-window*/
-.backdrop{
+/* .backdrop{
   position: fixed;
   top: 0;
   left: 0;
@@ -13,10 +13,10 @@ pointer-events: auto;
 
  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
+} */
 .modal-window-explore {
   display: flex;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -27,6 +27,7 @@ pointer-events: auto;
   height: 350px;
   background: #ffffff;
   border-radius: 20px;
+  z-index: 30;
 }
 .modal-explore {
   width: 24px;
@@ -47,12 +48,12 @@ pointer-events: auto;
 }
 
 @media screen and (min-width: 768px) {
-  .modal-window-chocolate{
+  .modal-window-chocolate {
     background: url(/img/subscribe-sec-img/modal-subscribe.jpg);
   }
 
-  .modal-window-explore{
-     width: 538px;
+  .modal-window-explore {
+    width: 538px;
     height: 412px;
   }
 }
@@ -77,35 +78,35 @@ pointer-events: auto;
   font-size: 20px;
   line-height: 1.2;
   color: #111111;
-  
+
   letter-spacing: -0.03em;
   text-transform: uppercase;
 }
 
 @media screen and (min-width: 768px) {
-  .modal-window-title{
+  .modal-window-title {
     font-size: 24px;
     line-height: 1.1;
   }
- 
-.form-modal-window {
-  width: 313px;
-  height: 52px;
-}
-.subscribe-form-wrapper{
-  width: 538px;
-  height: 216px;
-}
+
+  .form-modal-window {
+    width: 313px;
+    height: 52px;
+  }
+  .subscribe-form-wrapper {
+    width: 538px;
+    height: 216px;
+  }
 }
 
 @media screen and (max-width: 767px) {
- .form-modal-window{
-  width: 263px;
-  height: 45px;
- }
- .modal-window-title{
-  width: 311px;
- }
+  .form-modal-window {
+    width: 263px;
+    height: 45px;
+  }
+  .modal-window-title {
+    width: 311px;
+  }
 }
 
 .form-modal-window {
@@ -114,7 +115,7 @@ pointer-events: auto;
   align-items: flex-start;
   padding: 14px 18px;
   gap: 40px;
-  
+
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 25px;
@@ -141,27 +142,26 @@ pointer-events: auto;
   font-size: 14px;
   line-height: 1.3;
   color: #ffffff;
-
 }
 
 @media screen and (min-width: 768px) {
-  .subscribe-modal-window-btn{
+  .subscribe-modal-window-btn {
     position: static;
     width: 137px;
     height: 52px;
   }
-  .subscribe-form-wrapper{
+  .subscribe-form-wrapper {
     display: flex;
   }
-  .modal-window{
+  .modal-window {
     display: flex;
     margin-top: 28px;
     gap: 8px;
   }
-  .form-modal-window{
+  .form-modal-window {
     margin-top: 0;
   }
-  .modal-window-title{
+  .modal-window-title {
     padding-right: 180px;
   }
 }
@@ -175,8 +175,8 @@ pointer-events: auto;
   font-size: 14px;
   line-height: 17px;
 }
-.is-hidden{
- opacity: 0;
+.is-hidden {
+  opacity: 0;
   visibility: hidden;
   pointer-events: none;
 }
