@@ -193,9 +193,8 @@
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
+  z-index: 1;
 
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal {
@@ -204,11 +203,16 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 609px;
-  min-height: 576px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
+ 
   padding: 48px;
   background: #fafafa;
   border-radius: 15px;
+  width: 95%;
+  max-width: 609px;
+  height: 95%;
+ 
+  overflow-Y: scroll;
 }
 
 .modal-close-btn {
@@ -224,8 +228,7 @@
   background-color: #e7e9fc;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+ 
 }
 
 .modal-close-btn:hover,
@@ -233,15 +236,15 @@
   border: none;
 }
 
-.modal-close-btn:hover .modal-close-icon,
+/* .modal-close-btn:hover .modal-close-icon,
 .modal-close-btn:focus .modal-close-icon {
-  fill: var(--white-color);
-}
+  fill: ;
+} */
 
 .modal-close-icon {
-  fill: #2e2f42;
-  transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  fill: #111111;
 }
+
 
 .is-hidden {
   opacity: 0;
@@ -318,9 +321,6 @@
   margin-bottom: 18px;
 }
 
-.contact-form-wrapper {
-  margin-bottom: 16px;
-}
 
 .contact-form-input {
   width: 100%;
@@ -341,7 +341,8 @@
 }
 
 .phone {
-  padding-left: 117px;
+  position: relative;
+  padding-left: 177px;
 }
 
 .contact-form-textarea {
@@ -363,10 +364,7 @@
   border-radius: 13px;
 }
 
-.contact-form-span {
-  color: var(--logo-color);
-  text-decoration: underline;
-}
+
 
 .contact-form-sumbit {
   display: block;
@@ -403,4 +401,36 @@
 .contact-form-textarea:hover,
 .contact-form-textarea:focus {
   outline: none;
+}
+
+.icon-phone{
+  position: absolute;
+  top: 21px;
+  left: 24px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  padding-right: 32px;
+  border-right: 2.7px solid rgba(17, 17, 17, 0.05);
+
+}
+
+.phone-text-input{
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 0.8;
+
+
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+
+  color: #000000;
+}
+
+.icon-mastercard{
+  position: absolute;
+  top: 18px;
+  right: 24px;
 }
