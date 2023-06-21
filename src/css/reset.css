@@ -20,9 +20,9 @@ a {
   text-decoration: none;
 }
 
-a:visited {
+/* a:visited {
   color: inherit;
-}
+} */
 
 button {
   cursor: pointer;

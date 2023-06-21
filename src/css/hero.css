@@ -70,10 +70,30 @@
   line-height: 1.21;
   color: var(--text-color-theme-dark);
   padding: 12px 28px;
+  transition: background-color 250ms var(--transition-cubic),
+    color 250ms var(--transition-cubic);
 }
 .btn-hero:hover {
   background-color: #fcf1e0;
   color: #fd9222;
+}
+
+.btn-hero-link {
+  display: block;
+  text-align: center;
+  text-decoration: none;
+
+  padding: 11px 27px;
+  min-width: 120px;
+  border-radius: 100px;
+
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.21;
+
+  color: #ffffff;
+  background: rgba(28, 28, 28, 0);
+  border: 1px solid #ffffff;
 }
 
 .hero-wrapper-scroll {
@@ -99,10 +119,6 @@
 .icon-hero {
   background: var(--text-color-theme-dark);
   border-radius: 20px;
-}
-.btn-hero-style {
-  background: rgba(28, 28, 28, 0);
-  border: 1px solid #ffffff;
 }
 
 @media screen and (max-width: 767.9px) {
