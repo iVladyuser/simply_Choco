@@ -29,7 +29,7 @@
     />
     
     <script type="module" crossorigin src="/simply_Choco/assets/index-8898e8c1.js"></script>
-    <link rel="stylesheet" href="/simply_Choco/assets/index-200ae8d3.css">
+    <link rel="stylesheet" href="/simply_Choco/assets/index-1b3af398.css">
   </head>
   <body>
     <!-- Anna -->
@@ -801,22 +801,23 @@
             CHOCOLATE FIRST</h2>
         <p class="subscribe-description">From the velvety texture to the rich and complex flavor, our New Chocolate is a true indulgence that will leave you craving more. Made with only the finest ingredients and handcrafted with the utmost care, each piece is a work of art that is sure to please.</p>
      </div>
-        <button class="subscribe-open-btn" type="button">Subscribe</button>
+        <button data-modal-open class="subscribe-open-btn" type="button">Subscribe</button>
     </div>
 </section>
-      <div class="modal-window-explore">
+      <div class="backdrop is-hidden" data-modal>
+<div class="modal-window-explore">
   <div class="modal-window-chocolate">
-    <button class="modal-window-chocolate-button">
-      <svg class="modal-explore" widht="12" hight="12">
-        <use href="../img/sprite.svg#icon-x-close"></use>
+    <button data-modal-close class="modal-window-chocolate-button">
+      <svg class="modal-explore" width="12" height="12">
+       <use class="mobile-menu-close-icon" href="/simply_Choco/assets/sprite-a233f844.svg#icon-close"></use>  
       </svg>
     </button>
   </div>
+  
   <p class="modal-window-title">
-    Explore our <br />
-    <span class="span-products"> new chocolate</span> first!
-  </p>
-
+    Explore our<br />
+    <span class="span-products">new chocolate</span> first!</p>
+   
   <form class="modal-window-form" action="">
     <div class="modal-window">
       <input
@@ -827,6 +828,8 @@
       <button class="subscribe-modal-window-btn">Submit</button>
     </div>
   </form>
+
+</div>
 </div>
 
     </main>
