@@ -29,7 +29,7 @@
     />
     
     <script type="module" crossorigin src="/simply_Choco/assets/index-8898e8c1.js"></script>
-    <link rel="stylesheet" href="/simply_Choco/assets/index-e2a32964.css">
+    <link rel="stylesheet" href="/simply_Choco/assets/index-c586520d.css">
   </head>
   <body>
     <!-- Anna -->
@@ -43,12 +43,12 @@
         </svg>
       </a>
       <ul class="nav-list list">
-        <li class="nav-link"><a href="home">Home</a></li>
-        <li class="nav-link"><a href="how-made">How it’s made?</a></li>
-        <li class="nav-link"><a href="products">Our products</a></li>
-        <li class="nav-link"><a href="sellers">Top sellers</a></li>
+        <li class="nav-link"><a href="#home">Home</a></li>
+        <li class="nav-link"><a href="#how-made">How it’s made?</a></li>
+        <li class="nav-link"><a href="#products">Our products</a></li>
+        <li class="nav-link"><a href="#sellers">Top sellers</a></li>
         <li class="nav-link">
-          <a href="clients">Chocolate is loved</a>
+          <a href="#clients">Chocolate is loved</a>
         </li>
       </ul>
     </nav>
@@ -84,12 +84,12 @@
       </svg>
     </button>
     <ul class="mobile-nav-list">
-      <li class="mobile-nav-link"><a href="home">Home</a></li>
-      <li class="mobile-nav-link"><a href="how-made">How it’s made?</a></li>
-      <li class="mobile-nav-link"><a href="products">Our products</a></li>
-      <li class="mobile-nav-link"><a href="sellers">Top sellers</a></li>
+      <li class="mobile-nav-link"><a href="#home">Home</a></li>
+      <li class="mobile-nav-link"><a href="#how-made">How it’s made?</a></li>
+      <li class="mobile-nav-link"><a href="#products">Our products</a></li>
+      <li class="mobile-nav-link"><a href="#sellers">Top sellers</a></li>
       <li class="mobile-nav-link">
-        <a href="clients">Chocolate is loved</a>
+        <a href="#clients">Chocolate is loved</a>
       </li>
     </ul>
     <ul class="mobile-social-networks">
@@ -128,11 +128,16 @@
     </h2>
     <div class="hero-btn-wrappers">
       <div class="hero-wrapper-btn">
-        <button type="button" class="btn-hero" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+        <button
+          type="button"
+          class="btn-hero js-open-modal"
+          data-modal="2"
+          data-bs-toggle="modal"
+          data-bs-target="#staticBackdrop"
+        >
           Buy now
         </button>
         <a class="btn-hero btn-hero-link" href="#how-made">How it’s made</a>
-
       </div>
       <div class="hero-wrapper-scroll">
         <a class="btn-hero-scroll" href="#footer">
@@ -145,6 +150,7 @@
     </div>
   </div>
 </section>
+
       <!-- Egor -->
       <section class="advantages-section">
   <div class="container advantages-box">
@@ -809,7 +815,7 @@
     <button
       data-modal-open
       class="subscribe-open-btn js-open-modal"
-      data-modal=""
+      data-modal="3"
       type="button"
     >
       Subscribe
@@ -817,32 +823,38 @@
   </div>
 </section>
 
-      <div class="backdrop is-hidden" data-modal>
-<div class="modal-window-explore">
-  <div class="modal-window-chocolate">
-    <button data-modal-close class="modal-window-chocolate-button">
-      <svg class="modal-explore" width="12" height="12">
-       <use class="mobile-menu-close-icon" href="/simply_Choco/assets/sprite-a233f844.svg#icon-close"></use>  
-      </svg>
-    </button>
-  </div>
-  
-  <p class="modal-window-title">
-    Explore our<br />
-    <span class="span-products">new chocolate</span> first!</p>
-   
-  <form class="modal-window-form" action="">
-    <div class="modal-window">
-      <input
-        class="form-modal-window"
-        type="text"
-        placeholder="Enter your email"
-      />
-      <button class="subscribe-modal-window-btn">Submit</button>
+      <div class="backdrop">
+  <div class="modal-window-explore modal" data-modal="3">
+    <div class="modal-window-chocolate">
+      <button
+        data-modal-close
+        class="modal-window-chocolate-button js-modal-close"
+      >
+        <svg class="modal-explore" width="12" height="12">
+          <use
+            class="mobile-menu-close-icon"
+            href="/simply_Choco/assets/sprite-a233f844.svg#icon-close"
+          ></use>
+        </svg>
+      </button>
     </div>
-  </form>
 
-</div>
+    <p class="modal-window-title">
+      Explore our<br />
+      <span class="span-products">new chocolate</span> first!
+    </p>
+
+    <form class="modal-window-form" action="">
+      <div class="modal-window">
+        <input
+          class="form-modal-window"
+          type="text"
+          placeholder="Enter your email"
+        />
+        <button class="subscribe-modal-window-btn">Submit</button>
+      </div>
+    </form>
+  </div>
 </div>
 
     </main>
