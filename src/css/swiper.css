@@ -1,5 +1,6 @@
 .swiper {
-  width: 335px;
+  max-width: 335px;
+  width: 90%;
   height: 409px;
 }
 /* .swiper-pagination {
