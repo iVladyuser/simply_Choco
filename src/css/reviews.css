@@ -146,6 +146,11 @@
 }
 .review-modal-close-icon {
   fill: var(--main-color);
+  transition: fill 250ms var(--transition-cubic);
+}
+.review-modal-close-icon:hover,
+.review-modal-close-icon:focus {
+  fill: var(--orange-color);
 }
 .review-modal-title {
   text-align: start;
@@ -231,7 +236,7 @@
 }
 .review-form-btn {
   border: none;
-  background: #fd9222;
+  background-color: var(--orange-color);
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
@@ -239,6 +244,13 @@
   color: var(--text-color-theme-dark);
   padding: 14px 40px;
   margin-top: 18px;
+  transition: color 250ms var(--transition-cubic),
+    background-color 250ms var(--transition-cubic);
+}
+.review-form-btn:hover,
+.review-form-btn:focus {
+  color: var(--orange-color);
+  background-color: var(--background-hover-color);
 }
 .mobile-lead {
   display: none;
