@@ -29,7 +29,7 @@
     />
     
     <script type="module" crossorigin src="/simply_Choco/assets/index-8898e8c1.js"></script>
-    <link rel="stylesheet" href="/simply_Choco/assets/index-1b3af398.css">
+    <link rel="stylesheet" href="/simply_Choco/assets/index-e2a32964.css">
   </head>
   <body>
     <!-- Anna -->
@@ -746,51 +746,49 @@
     </ul>
   </div>
 
-  <button class="btn-review" type="button">Leave a review</button>
+  <button class="btn-review js-open-modal" data-modal="1" type="button">
+    Leave a review
+  </button>
 </section>
-<div class="review-backdrop">
-  <div class="review-modal">
-    <button class="review-modal-close-btn" type="button">
-      <svg class="review-modal-close-icon" width="28" height="28">
-        <use href="/simply_Choco/assets/sprite-a233f844.svg#icon-close"></use>
-      </svg>
-    </button>
-    <h2 class="title review-modal-title">
-      LEAVE A REVIEW <br class="mobile-lead" />
-      ABOUT <span class="modal-title-accent">OUR CHOCOLATE</span>
-    </h2>
-    <form class="review-form">
+
+<div class="review-modal modal" data-modal="1">
+  <button class="review-modal-close-btn js-modal-close" type="button">
+    <svg class="review-modal-close-icon" width="28" height="28">
+      <use href="/simply_Choco/assets/sprite-a233f844.svg#icon-close"></use>
+    </svg>
+  </button>
+  <h2 class="title review-modal-title">
+    LEAVE A REVIEW <br class="mobile-lead" />
+    ABOUT <span class="modal-title-accent">OUR CHOCOLATE</span>
+  </h2>
+  <form class="review-form">
+    <label
+      ><input class="review-form-input" type="text" placeholder="Name" /></label
+    ><label
+      ><input class="review-form-input" type="email" placeholder="Email"
+    /></label>
+    <div class="review-input-wrapper">
+      <div class="input-icon-block">
+        <svg width="32" height="24">
+          <use href="/simply_Choco/assets/sprite-a233f844.svg#icon-flag-ua"></use>
+        </svg>
+        <p class="review-input-text">+380</p>
+      </div>
       <label
         ><input
-          class="review-form-input"
-          type="text"
-          placeholder="Name" /></label
-      ><label
-        ><input class="review-form-input" type="email" placeholder="Email"
+          class="review-form-tel-input"
+          type="tel"
+          placeholder="Phone number"
       /></label>
-      <div class="review-input-wrapper">
-        <div class="input-icon-block">
-          <svg width="32" height="24">
-            <use href="/simply_Choco/assets/sprite-a233f844.svg#icon-flag-ua"></use>
-          </svg>
-          <p class="review-input-text">+380</p>
-        </div>
-        <label
-          ><input
-            class="review-form-tel-input"
-            type="tel"
-            placeholder="Phone number"
-        /></label>
-      </div>
-      <label>
-        <textarea
-          class="review-form-textarea"
-          placeholder="Enter text"
-        ></textarea>
-      </label>
-    </form>
-    <button class="review-form-btn" tupe="submit">Send</button>
-  </div>
+    </div>
+    <label>
+      <textarea
+        class="review-form-textarea"
+        placeholder="Enter text"
+      ></textarea>
+    </label>
+  </form>
+  <button class="review-form-btn" tupe="submit">Send</button>
 </div>
 
       <!-- Sasha -->
@@ -803,7 +801,16 @@
      </div>
         <button data-modal-open class="subscribe-open-btn" type="button">Subscribe</button>
     </div>
+    <button
+      class="subscribe-open-btn js-open-modal"
+      data-modal="2"
+      type="button"
+    >
+      Subscribe
+    </button>
+  </div>
 </section>
+
       <div class="backdrop is-hidden" data-modal>
 <div class="modal-window-explore">
   <div class="modal-window-chocolate">
@@ -917,6 +924,8 @@
   </div>
 </footer>
 
+    <!-- Подложка под модальным окном -->
+    <div class="overlay js-overlay-modal"></div>
 
     <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
     <!-- Animation mobile body scroll lock -->
