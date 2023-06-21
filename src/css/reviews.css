@@ -61,6 +61,8 @@
   padding: 14px 40px;
   border: 1px solid var(--orange-color);
   border-radius: 100px;
+  transition: color 250ms var(--transition-cubic),
+    background-color 250ms var(--transition-cubic);
 }
 .btn-review:hover,
 .btn-review:focus {
