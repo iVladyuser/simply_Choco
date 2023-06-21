@@ -97,6 +97,8 @@ font-weight: 600;
 font-size: 18px;
 line-height: 1.3;
 color: #FFFFFF;
+transition: color 250ms var(--transition-cubic), 
+background-color 250ms var(--transition-cubic);
 }
 
 .subscribe-open-btn:hover,

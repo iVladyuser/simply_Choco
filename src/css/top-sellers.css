@@ -46,6 +46,8 @@
     padding: 12px 28px;
     background: #fd9222;
 
+    transition: color 250ms var(--transition-cubic),  background 250ms var(--transition-cubic);
+
     border: none;
     margin-top: 20px;
   }
@@ -113,6 +115,8 @@
     background: #fd9222;
     border-radius: 100px;
     border: none;
+
+    transition: color 250ms var(--transition-cubic),  background 250ms var(--transition-cubic);
   }
 
   .modal-btn:hover {
@@ -175,6 +179,8 @@
     background: #fd9222;
 
     border: none;
+
+    transition: color 250ms var(--transition-cubic),  background 250ms var(--transition-cubic);
   }
 
   .modal-btn:hover {
@@ -183,254 +189,554 @@
   }
 }
 
-.modal-buy {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(46, 47, 66, 0.4);
-  opacity: 1;
-  visibility: visible;
-  pointer-events: auto;
-  z-index: 1;
+
+/* ------------------------MODAL----------------------- */
+
+
+
+@media screen and (max-width: 767.9px) {
+  .modal-buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 1;
+  
+  }
+
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
+   
+  }
+
+  
+  .modal {
+    opacity: 0;
+    visibility: hidden;
+
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 609px;
+    
+    padding: 48px;
+    background: #fafafa;
+    border-radius: 15px;
+    width: 95%;
+    max-width: 609px;
+    height: 95%;
+   
+    overflow-Y: scroll;
+  }
+
+  .modal.active,
+  .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
+  
+  .modal-close-btn {
+   
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+  
+  
+    transition: background-color 250ms var(--transition-cubic);
+   
+  }
+  
+  .modal-close-btn:hover, .modal-close-icon
+  .modal-close-btn:focus .modal-close-icon {
+    background-color: #fcf1e0;
+    fill: #fd9222;
+    border: none;
+  }
+  
+  
+  
+  
+  
+  .contact-form-text {
+    margin-bottom: 32px;
+  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: -0.03em;
+  }
+  
+  .contact-form-text-span {
+    color: #fd9222;
+  }
+  
+  .modal-card-list {
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+     
+
+   
+    margin-bottom: 32px;
+  }
+  
+  .modal-card-img {
+  
+    position: absolute;
+    top: 8px;
+    left: 16px;
+
+    width: 84px;
+    height: 69px;
+  }
+
+  
+  .modal-cards-btn {
+    
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #111111;
+    padding: 6px 16px;
+  
+    background: #fafafa;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 28px;
+    right: 16px;
+    margin-top: 0;
+    
+  
+    
+  }
+  
+  .modal-card-item {
+    position: relative;
+    
+    margin-bottom: 16px;
+    width: 269px;
+    height: 85px;
+    background: #fff;
+    padding: 8px 16px;
+  }
+  
+  .contact-form-field-desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.7;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contact-form-field-wrapper {
+    display: block;
+    margin-bottom: 18px;
+    
+  }
+  
+  
+  .contact-form-input {
+    width: 100%;
+    height: 45px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    padding: 10px 18px;
+    color: rgba(64, 64, 64, 0.3);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;
+  }
+  
+  .phone {
+    position: relative;
+    padding-left: 120px;
+  }
+  
+  .contact-form-textarea {
+    resize: none;
+    width: 100%;
+    height: 137px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    padding: 22px 24px;
+    color: rgba(64, 64, 64, 0.3);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;
+  }
+  
+  
+  
+  .contact-form-sumbit {
+    display: block;
+    margin-top: 18px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #fff;
+    padding: 14px 40px;
+    background: #fd9222;
+    border: none;
+  
+    transition: color 250ms var(--transition-cubic),  background 250ms var(--transition-cubic);
+  }
+  
+  .contact-form-sumbit:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+  }
+  
+  .contact-form-input-wrapper {
+    position: relative;
+    display: block;
+  }
+  
+  .personal {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    
+  }
+  
+  .contact-form-input:hover,
+  .contact-form-input:focus,
+  .contact-form-textarea:hover,
+  .contact-form-textarea:focus {
+    outline: none;
+  }
+  
+  .icon-phone{
+    position: absolute;
+    top: 10px;
+    left: 18px;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding-right: 10px;
+    border-right: 2.7px solid rgba(17, 17, 17, 0.05);
+   
+  
+  }
+  
+  .phone-text-input{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.8;
+  
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+  }
+  
+  .icon-mastercard{
+    position: absolute;
+    top: 8px;
+    right: 14px;
+  }
 
 }
 
-.modal {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 609px;
- 
- 
-  padding: 48px;
-  background: #fafafa;
-  border-radius: 15px;
-  width: 95%;
-  max-width: 609px;
-  height: 95%;
- 
-  overflow-Y: scroll;
-}
+@media screen and (min-width: 768px){
+  .modal-buy {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(46, 47, 66, 0.4);
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    z-index: 1;
+  
+  }
 
-.modal-close-btn {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 0;
-  position: absolute;
-  top: 24px;
-  right: 24px;
-  width: 28px;
-  height: 28px;
-  background-color: #e7e9fc;
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  border-radius: 50%;
- 
-}
+  .overlay {
+    opacity: 0;
+    visibility: hidden;
+    
+  }
 
-.modal-close-btn:hover,
-.modal-close-btn:focus {
-  border: none;
-}
+  
+  
+  .modal {
+    opacity: 0;
+    visibility: hidden;
 
-/* .modal-close-btn:hover .modal-close-icon,
-.modal-close-btn:focus .modal-close-icon {
-  fill: ;
-} */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 609px;
+   
+   
+    padding: 48px;
+    background: #fafafa;
+    border-radius: 15px;
+    width: 95%;
+    max-width: 609px;
+    height: 95%;
+   
+    overflow-Y: scroll;
+  }
+  
+  .modal.active,
+  .overlay.active{
+    opacity: 1;
+    visibility: visible;
+ }
 
-.modal-close-icon {
-  fill: #111111;
-}
+  .modal-close-btn {
+    
 
-
-.is-hidden {
-  opacity: 0;
-  visibility: hidden;
-  pointer-events: none;
-}
-
-.contact-form-text {
-  margin-bottom: 32px;
-
-  font-style: normal;
-  font-weight: 600;
-  font-size: 24px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: -0.03em;
-}
-
-.contact-form-text-span {
-  color: #fd9222;
-}
-
-.modal-card-list {
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 40px;
-}
-
-.modal-img {
-  position: absolute;
-  top: 24px;
-  left: 20px;
-}
-
-.modal-cards-btn {
-  margin-top: 14px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 0.8;
-  color: #111111;
-  padding: 8px 27px;
-
-  background: #fafafa;
-  border: 1px solid rgba(17, 17, 17, 0.1);
-  border-radius: 100px;
-  position: absolute;
-  bottom: 18px;
-  left: 32px;
-}
-
-.modal-card-item {
-  position: relative;
-
-  width: 160px;
-  height: 196px;
-  background: #fff;
-}
-
-.contact-form-field-desc {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 14px;
-  line-height: 0.7;
-  letter-spacing: 0.02em;
-  color: #000000;
-  display: block;
-  margin-bottom: 8px;
-}
-
-.contact-form-field-wrapper {
-  display: block;
-  margin-bottom: 18px;
-}
-
-
-.contact-form-input {
-  width: 100%;
-  height: 66px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 0.8;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  padding: 22px 24px;
-  color: rgba(64, 64, 64, 0.3);
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 13px;
-}
-
-.phone {
-  position: relative;
-  padding-left: 177px;
-}
-
-.contact-form-textarea {
-  resize: none;
-  width: 100%;
-  height: 137px;
-  font-family: 'Montserrat';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 0.8;
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-  padding: 22px 24px;
-  color: rgba(64, 64, 64, 0.3);
-  border: 1.5px solid rgba(17, 17, 17, 0.05);
-  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
-  border-radius: 13px;
-}
-
-
-
-.contact-form-sumbit {
-  display: block;
-  margin-top: 18px;
-  height: 50px;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 0.8;
-  color: #fff;
-  padding: 14px 40px;
-  background: #fd9222;
-  border: none;
-}
-
-.contact-form-sumbit:hover {
-  background-color: #fcf1e0;
-  color: #fd9222;
-}
-
-.contact-form-input-wrapper {
-  position: relative;
-  display: block;
-}
-
-.personal {
-  display: flex;
-  flex-direction: row;
-  gap: 21px;
-}
-
-.contact-form-input:hover,
-.contact-form-input:focus,
-.contact-form-textarea:hover,
-.contact-form-textarea:focus {
-  outline: none;
-}
-
-.icon-phone{
-  position: absolute;
-  top: 21px;
-  left: 24px;
-  display: flex;
-  justify-content: center;
-  gap: 18px;
-  padding-right: 32px;
-  border-right: 2.7px solid rgba(17, 17, 17, 0.05);
-
-}
-
-.phone-text-input{
-  font-style: normal;
-  font-weight: 500;
-  font-size: 18px;
-  line-height: 0.8;
-
-
-  display: flex;
-  align-items: center;
-  letter-spacing: -0.02em;
-
-  color: #000000;
-}
-
-.icon-mastercard{
-  position: absolute;
-  top: 18px;
-  right: 24px;
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    width: 28px;
+    height: 28px;
+    background-color: transparent;
+    border: none;
+    border-radius: 50%;
+  
+  
+    transition: background-color 250ms var(--transition-cubic);
+   
+  }
+  
+  .modal-close-btn:hover, .modal-close-icon
+  .modal-close-btn:focus .modal-close-icon {
+    background-color: #fcf1e0;
+    fill: #fd9222;
+    border: none;
+  }
+  
+  
+  .contact-form-text {
+    margin-bottom: 32px;
+  
+    font-style: normal;
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 1.17;
+    text-align: center;
+    letter-spacing: -0.03em;
+  }
+  
+  .contact-form-text-span {
+    color: #fd9222;
+  }
+  
+  .modal-card-list {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+  }
+  
+  .modal-card-img {
+    position: absolute;
+    top: 24px;
+    left: 20px;
+  }
+  
+  .modal-cards-btn {
+    margin-top: 14px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #111111;
+    padding: 8px 27px;
+  
+    background: #fafafa;
+    border: 1px solid rgba(17, 17, 17, 0.1);
+    border-radius: 100px;
+    position: absolute;
+    bottom: 18px;
+    left: 32px;
+  
+    
+  }
+  
+  .modal-card-item {
+    position: relative;
+  
+    width: 160px;
+    height: 196px;
+    background: #fff;
+  }
+  
+  .contact-form-field-desc {
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 0.7;
+    letter-spacing: 0.02em;
+    color: #000000;
+    display: block;
+    margin-bottom: 8px;
+  }
+  
+  .contact-form-field-wrapper {
+    display: block;
+    margin-bottom: 18px;
+  }
+  
+  
+  .contact-form-input {
+    width: 100%;
+    height: 66px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    padding: 22px 24px;
+    color: rgba(64, 64, 64, 0.3);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;
+  }
+  
+  .phone {
+    position: relative;
+    padding-left: 177px;
+  }
+  
+  .contact-form-textarea {
+    resize: none;
+    width: 100%;
+    height: 137px;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 0.8;
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+    padding: 22px 24px;
+    color: rgba(64, 64, 64, 0.3);
+    border: 1.5px solid rgba(17, 17, 17, 0.05);
+    filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+    border-radius: 13px;
+  }
+  
+  
+  
+  .contact-form-sumbit {
+    display: block;
+    margin-top: 18px;
+    height: 50px;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 0.8;
+    color: #fff;
+    padding: 14px 40px;
+    background: #fd9222;
+    border: none;
+  
+    transition: color 250ms var(--transition-cubic),  background 250ms var(--transition-cubic);
+  }
+  
+  .contact-form-sumbit:hover {
+    background-color: #fcf1e0;
+    color: #fd9222;
+  }
+  
+  .contact-form-input-wrapper {
+    position: relative;
+    display: block;
+  }
+  
+  .personal {
+    display: flex;
+    flex-direction: row;
+    gap: 21px;
+  }
+  
+  .contact-form-input:hover,
+  .contact-form-input:focus,
+  .contact-form-textarea:hover,
+  .contact-form-textarea:focus {
+    outline: none;
+  }
+  
+  .icon-phone{
+    position: absolute;
+    top: 21px;
+    left: 24px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+    padding-right: 32px;
+    border-right: 2.7px solid rgba(17, 17, 17, 0.05);
+  
+  }
+  
+  .phone-text-input{
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 0.8;
+  
+  
+    display: flex;
+    align-items: center;
+    letter-spacing: -0.02em;
+  
+    color: #000000;
+  }
+  
+  .icon-mastercard{
+    position: absolute;
+    top: 18px;
+    right: 24px;
+  }
 }
