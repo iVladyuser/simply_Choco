@@ -1,0 +1,104 @@
+/*modal-window*/
+
+.modal-window-explore {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 311px;
+  height: 350px;
+  background: #ffffff;
+  border: 1px solid rgba(17, 17, 17, 0.1);
+  border-radius: 20px;
+}
+.modal-explore {
+  width: 24px;
+  height: 24px;
+  left: 273px;
+  top: 15px;
+  background: rgba(0, 0, 0, 0.8);
+  border: medium none;
+  background-image: none;
+  background: transparent;
+}
+.modal-window-chocolate {
+  width: 100%;
+  height: 100%;
+  background: url(../img/our-prod-sec-img/tetiana-bykovets-TzN2odwnesg-unsplash\ 1.jpg);
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+
+.modal-window-chocolate-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  background-color: transparent;
+  margin-top: 21px;
+  margin-right: 20px;
+  border: medium none;
+  background-image: none;
+  background: transparent;
+}
+.modal-window-title {
+  margin-top: 32px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 24px;
+  color: #111111;
+  width: 311px;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+.form-modal-window {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  padding: 14px 18px;
+  gap: 40px;
+  width: 263px;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 25px;
+  margin-top: 24px;
+}
+.modal-window {
+  position: relative;
+  padding-bottom: 32px;
+}
+.subscribe-modal-window-btn {
+  position: absolute;
+  width: 100px;
+  height: 45px;
+  left: 163px;
+  top: 0px;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+  background: #fd9222;
+  border-radius: 100px;
+  border: none;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.3;
+  color: #ffffff;
+}
+.modal-window-form {
+  padding-left: 20px;
+  width: 100%;
+}
+::placeholder {
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+}
