@@ -103,3 +103,126 @@
     width: calc((100% - 56px) / 3);
   }
 }
+
+/* -----MODAL----- */
+.review-backdrop {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(46, 47, 66, 0.4);
+  visibility: visible;
+  opacity: 1;
+  pointer-events: all;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.review-modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+  width: 517px;
+  height: 628px;
+  background: var(--cloud-color);
+  border-radius: 15px;
+}
+.review-modal-close-btn {
+  position: absolute;
+  top: 24px;
+  right: 24px;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border: none;
+  border-radius: 0%;
+  background-color: transparent;
+}
+.review-modal-close-icon {
+  fill: var(--main-color);
+}
+.review-modal-title {
+  text-align: start;
+  line-height: 1.17;
+}
+.modal-title-accent {
+  color: var(--orange-color);
+}
+.review-form {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  margin-top: 40px;
+}
+.review-form-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  outline: transparent;
+  background-color: transparent;
+}
+.review-form-tel-input {
+  width: 100%;
+  height: 45px;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  padding-left: 177px;
+  padding-right: 18px;
+  outline: transparent;
+  background-color: transparent;
+}
+.review-input-wrapper {
+  position: relative;
+}
+.input-icon-block {
+  position: absolute;
+  display: flex;
+  gap: 18px;
+  top: 0;
+  left: 0;
+  border-right: 2px solid rgba(17, 17, 17, 0.05);
+  padding-right: 24px;
+}
+.review-form-textarea {
+  width: 100%;
+  height: 137px;
+  padding: 22px 24px;
+  resize: none;
+  border: 1.5px solid rgba(17, 17, 17, 0.05);
+  filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
+  border-radius: 8px;
+  padding-left: 18px;
+  padding-right: 18px;
+  outline: transparent;
+  background-color: transparent;
+}
+.review-form-input,
+.review-form-textarea,
+.review-form-tel-input {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+}
+.review-form-btn {
+  border: none;
+  background: #fd9222;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.2;
+  color: var(--text-color-theme-dark);
+  padding: 14px 40px;
+}

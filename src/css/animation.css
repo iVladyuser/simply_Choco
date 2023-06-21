@@ -39,3 +39,24 @@
     transform-origin: top left;
   }
 }
+
+/* ------MOBILE MENU----- */
+
+.is-open {
+  /* animation: zoomInRight; */
+  /* animation: fadeInRight; */
+  animation: fadeInTopRight;
+  animation-duration: 700ms;
+}
+.is-open .mobile-nav-list,
+.is-open .mobile-social-networks {
+  visibility: visible;
+  opacity: 1;
+  transition: visibility 1000ms 850ms cubic-bezier(0.4, 0, 0.2, 1),
+    opacity 1000ms 850ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.mobile-nav-list,
+.mobile-social-networks {
+  visibility: hidden;
+  opacity: 0;
+}
