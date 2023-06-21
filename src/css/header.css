@@ -80,7 +80,7 @@
   align-items: center;
 }
 .mobile-menu-close-icon {
-  stroke: var(--text-color-theme-dark);
+  fill: var(--text-color-theme-dark);
 }
 .mobile-menu {
   position: fixed;
