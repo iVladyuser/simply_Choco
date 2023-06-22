@@ -202,20 +202,15 @@
     width: 100%;
     height: 100%;
     background: rgba(46, 47, 66, 0.4);
-    opacity: 1;
-    visibility: visible;
-    pointer-events: auto;
-    z-index: 1;
+    
   
   }
 
 
   
   .modal-buy-now {
-    opacity: 0;
-    visibility: hidden;
-
-    position: absolute;
+    
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -227,12 +222,17 @@
     width: 95%;
     max-width: 609px;
     height: 95%;
-   
+    z-index: 30;
+
     overflow-Y: scroll;
   }
 
   
   .modal-close-btn {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
    
     position: absolute;
     top: 24px;
@@ -241,23 +241,25 @@
     height: 28px;
     background-color: transparent;
     border: none;
-    border-radius: 50%;
+    border-radius: 0;
   
   
-    transition: background-color 250ms var(--transition-cubic);
+    transition: fill 250ms var(--transition-cubic);
    
   }
   
   .modal-close-btn:hover, .modal-close-icon
   .modal-close-btn:focus .modal-close-icon {
-    background-color: #fcf1e0;
+    
     fill: #fd9222;
     border: none;
   }
   
   
-  
-  
+  .modal-close-icon{
+    width: 24px;
+    height: 24px;
+  }
   
   .contact-form-text {
     margin-bottom: 32px;
@@ -511,20 +513,25 @@
     height: 28px;
     background-color: transparent;
     border: none;
-    border-radius: 50%;
+    border-radius: 0;
   
   
-    transition: background-color 250ms var(--transition-cubic);
+    transition: fill 250ms var(--transition-cubic);
    
   }
   
   .modal-close-btn:hover, .modal-close-icon
   .modal-close-btn:focus .modal-close-icon {
-    background-color: #fcf1e0;
+    
     fill: #fd9222;
     border: none;
   }
   
+  
+  .modal-close-icon{
+    width: 28px;
+    height: 28px;
+  }
   
   .contact-form-text {
     margin-bottom: 32px;
