@@ -73,7 +73,8 @@
   transition: background-color 250ms var(--transition-cubic),
     color 250ms var(--transition-cubic);
 }
-.btn-hero:hover {
+.btn-hero:hover,
+.btn-hero:focus {
   background-color: #fcf1e0;
   color: #fd9222;
 }
@@ -114,13 +115,30 @@
   color: var(--text-color-theme-dark);
   align-items: center;
   gap: 14px;
+  transition: color 250ms var(--transition-cubic);
+}
+
+.btn-hero-scroll:hover,
+.btn-hero-scroll:focus {
+  color: #fd9222;
 }
 
 .icon-hero {
+  color: #fd9222;
   background: var(--text-color-theme-dark);
-  border-radius: 20px;
+  border-radius: 50px;
+  fill: currentColor;
+  transition: background-color 250ms var(--transition-cubic),
+    color 250ms var(--transition-cubic);
 }
-
+.btn-hero-scroll:hover .icon-hero {
+  background-color: #fd9222;
+  color: #ffffff;
+}
+.btn-hero-scroll:focus .icon-hero {
+  background-color: #fd9222;
+  color: #ffffff;
+}
 @media screen and (max-width: 767.9px) {
   .container-hero {
     max-width: 335px;
