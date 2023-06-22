@@ -361,7 +361,7 @@
     align-items: center;
     letter-spacing: -0.02em;
     padding: 10px 18px;
-    color: rgba(64, 64, 64, 0.3);
+    color: #000000;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
@@ -385,7 +385,7 @@
     align-items: center;
     letter-spacing: -0.02em;
     padding: 22px 24px;
-    color: rgba(64, 64, 64, 0.3);
+    color: #000000;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
@@ -467,6 +467,8 @@
     top: 8px;
     right: 14px;
   }
+
+  
 
 }
 
@@ -617,7 +619,7 @@
     align-items: center;
     letter-spacing: -0.02em;
     padding: 22px 24px;
-    color: rgba(64, 64, 64, 0.3);
+    color: #000000;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
@@ -641,7 +643,7 @@
     align-items: center;
     letter-spacing: -0.02em;
     padding: 22px 24px;
-    color: rgba(64, 64, 64, 0.3);
+    color: #000000;
     border: 1.5px solid rgba(17, 17, 17, 0.05);
     filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
     border-radius: 13px;
@@ -719,4 +721,18 @@
     top: 18px;
     right: 24px;
   }
+
+  
 }
+
+::placeholder {
+  display: flex;
+  align-items: center;
+  letter-spacing: -0.02em;
+  color: rgba(64, 64, 64, 0.3);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 17px;
+  
+}
+
