@@ -160,8 +160,8 @@
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
   outline: transparent;
   background-color: transparent;
 }
@@ -202,13 +202,14 @@
 .review-form-textarea {
   width: 100%;
   height: 137px;
-  padding: 22px 24px;
+  padding-top: 22px;
+  padding-bottom: 22px;
   resize: none;
   border: 1.5px solid rgba(17, 17, 17, 0.05);
   filter: drop-shadow(0px 5.44492px 5.44492px rgba(0, 0, 0, 0.03));
   border-radius: 8px;
-  padding-left: 18px;
-  padding-right: 18px;
+  padding-left: 24px;
+  padding-right: 24px;
   outline: transparent;
   background-color: transparent;
 }
@@ -220,7 +221,7 @@
   font-size: 18px;
   line-height: 1.2;
   letter-spacing: -0.02em;
-  color: rgba(64, 64, 64, 0.3);
+  color: var(--main-color);
 }
 .review-form-btn {
   border: none;
@@ -274,6 +275,8 @@
     height: 45px;
     font-size: 14px;
     line-height: 1.2px;
+    padding-left: 18px;
+    padding-right: 18px;
   }
   .review-form-tel-input {
     height: 45px;
@@ -293,6 +296,10 @@
     font-size: 14px;
     line-height: 1.2px;
     height: 91px;
+    padding-left: 18px;
+    padding-right: 18px;
+    padding-top: 14px;
+    padding-bottom: 14px;
   }
   .review-form-btn {
     padding: 12px 28px;
